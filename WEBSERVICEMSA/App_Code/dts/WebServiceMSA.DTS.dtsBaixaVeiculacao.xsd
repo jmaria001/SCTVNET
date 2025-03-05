@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsBaixaVeiculacao" targetNamespace="http://tempuri.org/dtsBaixaVeiculacao.xsd" xmlns:mstns="http://tempuri.org/dtsBaixaVeiculacao.xsd" xmlns="http://tempuri.org/dtsBaixaVeiculacao.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="sctvConnectionString" IsAppSettingsProperty="True" Modifier="Assembly" Name="sctvConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.sctvConnectionString.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsBaixaVeiculacao" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtbBaixa_Critica">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Critica" type="xs:short" />
+              <xs:element name="Aviso" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Critica_Descricao" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbBaixa_Log">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Baixa" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="Tipo_Baixa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Veiculo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Data_Exibicao" msdata:DateTimeMode="Unspecified" type="xs:dateTime" />
+              <xs:element name="Cod_Programa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Chave_Acesso" type="xs:short" />
+              <xs:element name="Cod_Qualidade" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Horario_Exibicao" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Documento_Para" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Id_Usuario" type="xs:int" minOccurs="0" />
+              <xs:element name="Data_Baixa" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Id_Critica" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbBaixa">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Baixa" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="Tipo_Baixa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Veiculo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Data_Exibicao" msdata:DateTimeMode="Unspecified" type="xs:dateTime" />
+              <xs:element name="Cod_Programa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Chave_Acesso" type="xs:short" />
+              <xs:element name="Cod_Qualidade" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Horario_Exibicao" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Documento_Para" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Id_Usuario" type="xs:int" minOccurs="0" />
+              <xs:element name="Data_Baixa" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Id_Critica" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtbBaixa_Critica" />
+      <xs:field xpath="mstns:Id_Critica" />
+    </xs:unique>
+    <xs:unique name="dtbBaixa_Log_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtbBaixa_Log" />
+      <xs:field xpath="mstns:Id_Baixa" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

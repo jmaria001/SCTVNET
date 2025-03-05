@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsGradeCompetencia" targetNamespace="http://tempuri.org/dtsGradeCompetencia.xsd" xmlns:mstns="http://tempuri.org/dtsGradeCompetencia.xsd" xmlns="http://tempuri.org/dtsGradeCompetencia.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="sctvConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="sctvConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.sctvConnectionString.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsGradeCompetencia" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtbGradeCompetencia">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cod_Veiculo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Programa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Competencia" type="xs:int" />
+              <xs:element name="Indica_Merchandising" type="xs:boolean" />
+              <xs:element name="_x0030_1" type="xs:boolean" />
+              <xs:element name="_x0030_2" type="xs:boolean" />
+              <xs:element name="_x0030_3" type="xs:boolean" />
+              <xs:element name="_x0030_4" type="xs:boolean" />
+              <xs:element name="_x0030_5" type="xs:boolean" />
+              <xs:element name="_x0030_6" type="xs:boolean" />
+              <xs:element name="_x0030_7" type="xs:boolean" />
+              <xs:element name="_x0030_8" type="xs:boolean" />
+              <xs:element name="_x0030_9" type="xs:boolean" />
+              <xs:element name="_x0031_0" type="xs:boolean" />
+              <xs:element name="_x0031_1" type="xs:boolean" />
+              <xs:element name="_x0031_2" type="xs:boolean" />
+              <xs:element name="_x0031_3" type="xs:boolean" />
+              <xs:element name="_x0031_4" type="xs:boolean" />
+              <xs:element name="_x0031_5" type="xs:boolean" />
+              <xs:element name="_x0031_6" type="xs:boolean" />
+              <xs:element name="_x0031_7" type="xs:boolean" />
+              <xs:element name="_x0031_8" type="xs:boolean" />
+              <xs:element name="_x0031_9" type="xs:boolean" />
+              <xs:element name="_x0032_0" type="xs:boolean" />
+              <xs:element name="_x0032_1" type="xs:boolean" />
+              <xs:element name="_x0032_2" type="xs:boolean" />
+              <xs:element name="_x0032_3" type="xs:boolean" />
+              <xs:element name="_x0032_4" type="xs:boolean" />
+              <xs:element name="_x0032_5" type="xs:boolean" />
+              <xs:element name="_x0032_6" type="xs:boolean" />
+              <xs:element name="_x0032_7" type="xs:boolean" />
+              <xs:element name="_x0032_8" type="xs:boolean" />
+              <xs:element name="_x0032_9" type="xs:boolean" />
+              <xs:element name="_x0033_0" type="xs:boolean" />
+              <xs:element name="_x0033_1" type="xs:boolean" />
+              <xs:element name="Saldo01" type="xs:int" default="0" />
+              <xs:element name="Saldo02" type="xs:int" default="0" />
+              <xs:element name="Saldo03" type="xs:int" default="0" />
+              <xs:element name="Saldo04" type="xs:int" default="0" />
+              <xs:element name="Saldo05" type="xs:int" default="0" />
+              <xs:element name="Saldo06" type="xs:int" default="0" />
+              <xs:element name="Saldo07" type="xs:int" default="0" />
+              <xs:element name="Saldo08" type="xs:int" default="0" />
+              <xs:element name="Saldo09" type="xs:int" default="0" />
+              <xs:element name="Saldo10" type="xs:int" default="0" />
+              <xs:element name="Saldo11" type="xs:int" default="0" />
+              <xs:element name="Saldo12" type="xs:int" default="0" />
+              <xs:element name="Saldo13" type="xs:int" default="0" />
+              <xs:element name="Saldo14" type="xs:int" default="0" />
+              <xs:element name="Saldo15" type="xs:int" default="0" />
+              <xs:element name="Saldo16" type="xs:int" default="0" />
+              <xs:element name="Saldo17" type="xs:int" default="0" />
+              <xs:element name="Saldo18" type="xs:int" default="0" />
+              <xs:element name="Saldo19" type="xs:int" default="0" />
+              <xs:element name="Saldo20" type="xs:int" default="0" />
+              <xs:element name="Saldo21" type="xs:int" default="0" />
+              <xs:element name="Saldo22" type="xs:int" default="0" />
+              <xs:element name="Saldo23" type="xs:int" default="0" />
+              <xs:element name="Saldo24" type="xs:int" default="0" />
+              <xs:element name="Saldo25" type="xs:int" default="0" />
+              <xs:element name="Saldo26" type="xs:int" default="0" />
+              <xs:element name="Saldo27" type="xs:int" default="0" />
+              <xs:element name="Saldo28" type="xs:int" default="0" />
+              <xs:element name="Saldo29" type="xs:int" default="0" />
+              <xs:element name="Saldo30" type="xs:int" default="0" />
+              <xs:element name="Saldo31" type="xs:int" default="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtbGradeCompetencia" />
+      <xs:field xpath="mstns:Cod_Veiculo" />
+      <xs:field xpath="mstns:Cod_Programa" />
+      <xs:field xpath="mstns:Competencia" />
+      <xs:field xpath="mstns:Indica_Merchandising" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

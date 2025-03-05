@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsAM" targetNamespace="http://tempuri.org/dtsAM.xsd" xmlns:mstns="http://tempuri.org/dtsAM.xsd" xmlns="http://tempuri.org/dtsAM.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="sctvConnectionString" IsAppSettingsProperty="True" Modifier="Assembly" Name="sctvConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.sctvConnectionString.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsAM" msdata:IsDataSet="true" msdata:Locale="en-US">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtbAM_Pesquisa">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cod_Empresa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Numero_MR" type="xs:int" />
+              <xs:element name="Sequencia_MR" type="xs:short" />
+              <xs:element name="Cod_Red_Produto" type="xs:int" />
+              <xs:element name="Cod_Veiculo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Numero_Docto">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Caracteristica">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Data_Abertura" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Data_Encerramento" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Solucao" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Solucao_Descricao" default=" " minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Agencia">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Cliente">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Periodo_Campanha_Inicio" msdata:DateTimeMode="Unspecified" type="xs:dateTime" />
+              <xs:element name="Periodo_Campanha_Termino" msdata:DateTimeMode="Unspecified" type="xs:dateTime" />
+              <xs:element name="Numero_PI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Tipo_Midia">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Descricao_Produto" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbAM">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Numero_Docto">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Empresa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Numero_Mr" type="xs:int" />
+              <xs:element name="Sequencia_Mr" type="xs:short" />
+              <xs:element name="Cod_Red_Produto" type="xs:int" />
+              <xs:element name="Cod_Caracteristica">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Veiculo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Qtde_Falha" type="xs:short" default="0" />
+              <xs:element name="Qtde_Solucao" type="xs:short" default="0" />
+              <xs:element name="Solucao" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vlr_Origem" type="xs:decimal" />
+              <xs:element name="Vlr_Destino" type="xs:decimal" />
+              <xs:element name="Valor_Diferenca" type="xs:decimal" />
+              <xs:element name="Indica_Fatura" type="xs:boolean" />
+              <xs:element name="Indica_a_futuro" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Indica_Autorizacao" msdata:Caption="Indica_Autorização" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Indica_Autorizado" msdata:Caption="INDICA_AUTORIZADO" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Numero_Carta" type="xs:int" />
+              <xs:element name="Numero_Fatura" msdata:Caption="NUMERO_FATURA" type="xs:int" />
+              <xs:element name="Data_Abertura" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Data_Encerramento" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Data_Visualizacao" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Data_Liberacao" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Cod_Usuario_Liberacao" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Usuario">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint12">
+      <xs:selector xpath=".//mstns:dtbAM" />
+      <xs:field xpath="mstns:Cod_Caracteristica" />
+      <xs:field xpath="mstns:Cod_Veiculo" />
+    </xs:unique>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtbAM" />
+      <xs:field xpath="mstns:Numero_Docto" />
+      <xs:field xpath="mstns:Numero_Mr" />
+      <xs:field xpath="mstns:Sequencia_Mr" />
+    </xs:unique>
+    <xs:unique name="Constraint13">
+      <xs:selector xpath=".//mstns:dtbAM" />
+      <xs:field xpath="mstns:Cod_Empresa" />
+    </xs:unique>
+    <xs:unique name="Constraint111">
+      <xs:selector xpath=".//mstns:dtbAM" />
+      <xs:field xpath="mstns:Cod_Red_Produto" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

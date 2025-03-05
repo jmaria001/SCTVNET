@@ -1,0 +1,85 @@
+﻿This report shows the steps taken to convert your Web application from ASP.NET 1.1 to ASP.NET 2.0. 
+There may be some unresolved conversion issues you will need to manually fix. 
+For more information, please refer to http://go.microsoft.com/fwlink/?LinkId=46995 or search for the help topic "Converting from Visual Studio .NET 2002 or 2003".
+Conversion Started on project file WebServiceMSA.csproj at February 09 2006, 11:47:45.
+
+=========================ERRORS===================
+ERROR: The following files were not migrated because they were not found in the project file or the associated 'BuildAction' is set to 'None'.
+You may need to exclude these files from the project after the conversion process in order to compile your web site: 
+File List == veiculo.asmx,service1.asmx,veiculo.asmx.cs,service1.asmx.cs.
+
+=========================WARNINGS=================
+Warning: 'Referencepath' settings have not been converted.
+
+=========================COMMENTS=================
+Web.Config: Added 'xhtmlConformance' attribute.
+Removed attribute Codebehind from file Global.asax.
+Added folder App_Code\dts.
+Moved file dts\dtscaracveiculacao.xsd to the App_Code\dts\ directory.
+Warning: Renamed file App_Code\dts\dtscaracveiculacao.xsd to file WebServiceMSA.DTS.dtscaracveiculacao.xsd.
+Removed file dts\dtscaracveiculacao.cs.
+Moved file dts\dtscontato.xsd to the App_Code\dts\ directory.
+Warning: Renamed file App_Code\dts\dtscontato.xsd to file WebServiceMSA.DTS.dtscontato.xsd.
+Removed file dts\dtscontato.cs.
+Moved file dts\dtsempresa.xsd to the App_Code\dts\ directory.
+Warning: Renamed file App_Code\dts\dtsempresa.xsd to file WebServiceMSA.DTS.dtsempresa.xsd.
+Removed file dts\dtsempresa.cs.
+Moved file dts\dtsgenero.xsd to the App_Code\dts\ directory.
+Warning: Renamed file App_Code\dts\dtsgenero.xsd to file WebServiceMSA.DTS.dtsgenero.xsd.
+Removed file dts\dtsgenero.cs.
+Moved file dts\dtsmercado.xsd to the App_Code\dts\ directory.
+Warning: Renamed file App_Code\dts\dtsmercado.xsd to file WebServiceMSA.DTS.dtsmercado.xsd.
+Removed file dts\dtsmercado.cs.
+Moved file dts\dtsnaturezaservico.xsd to the App_Code\dts\ directory.
+Warning: Renamed file App_Code\dts\dtsnaturezaservico.xsd to file WebServiceMSA.DTS.dtsnaturezaservico.xsd.
+Removed file dts\dtsnaturezaservico.cs.
+Moved file dts\dtsnucleo.xsd to the App_Code\dts\ directory.
+Warning: Renamed file App_Code\dts\dtsnucleo.xsd to file WebServiceMSA.DTS.dtsnucleo.xsd.
+Removed file dts\dtsnucleo.cs.
+Moved file dts\dtspreco.xsd to the App_Code\dts\ directory.
+Warning: Renamed file App_Code\dts\dtspreco.xsd to file WebServiceMSA.DTS.dtspreco.xsd.
+Removed file dts\dtspreco.cs.
+Moved file dts\dtsproduto.xsd to the App_Code\dts\ directory.
+Warning: Renamed file App_Code\dts\dtsproduto.xsd to file WebServiceMSA.DTS.dtsproduto.xsd.
+Removed file dts\dtsproduto.cs.
+Moved file dts\dtsprograma.xsd to the App_Code\dts\ directory.
+Warning: Renamed file App_Code\dts\dtsprograma.xsd to file WebServiceMSA.DTS.dtsprograma.xsd.
+Removed file dts\dtsprograma.cs.
+Moved file dts\dtsqualidade.xsd to the App_Code\dts\ directory.
+Warning: Renamed file App_Code\dts\dtsqualidade.xsd to file WebServiceMSA.DTS.dtsqualidade.xsd.
+Removed file dts\dtsqualidade.cs.
+Moved file dts\dtsterceiro.xsd to the App_Code\dts\ directory.
+Warning: Renamed file App_Code\dts\dtsterceiro.xsd to file WebServiceMSA.DTS.dtsterceiro.xsd.
+Removed file dts\dtsterceiro.cs.
+Moved file dts\dtstipocomercial.xsd to the App_Code\dts\ directory.
+Warning: Renamed file App_Code\dts\dtstipocomercial.xsd to file WebServiceMSA.DTS.dtstipocomercial.xsd.
+Removed file dts\dtstipocomercial.cs.
+Moved file dts\dtstipomidia.xsd to the App_Code\dts\ directory.
+Warning: Renamed file App_Code\dts\dtstipomidia.xsd to file WebServiceMSA.DTS.dtstipomidia.xsd.
+Removed file dts\dtstipomidia.cs.
+Moved file dts\dtsveiculo.xsd to the App_Code\dts\ directory.
+Warning: Renamed file App_Code\dts\dtsveiculo.xsd to file WebServiceMSA.DTS.dtsveiculo.xsd.
+Removed file dts\dtsveiculo.cs.
+Moved file asmxVeiculo.asmx.cs to the App_Code\ directory.
+Moved file asmxQualidade.asmx.cs to the App_Code\ directory.
+Moved file asmxPrograma.asmx.cs to the App_Code\ directory.
+Moved file asmxProduto.asmx.cs to the App_Code\ directory.
+Moved file asmxGenero.asmx.cs to the App_Code\ directory.
+Moved file asmxContato.asmx.cs to the App_Code\ directory.
+Moved file Global.asax.cs to the App_Code\ directory.
+Moved file asmxTipoMidia.asmx.cs to the App_Code\ directory.
+Moved file asmxTerceiro.asmx.cs to the App_Code\ directory.
+Moved file asmxNucleo.asmx.cs to the App_Code\ directory.
+Moved file asmxEmpresa.asmx.cs to the App_Code\ directory.
+Moved file asmxMercado.asmx.cs to the App_Code\ directory.
+Moved file AssemblyInfo.cs to the App_Code\ directory.
+Moved file asmxTipoComercial.asmx.cs to the App_Code\ directory.
+Moved file asmxNaturezaServico.asmx.cs to the App_Code\ directory.
+Moved file asmxPreco.asmx.cs to the App_Code\ directory.
+Moved file asmxCaracVeiculacao.asmx.cs to the App_Code\ directory.
+Changed HTML validation schema for all projects to 'Internet Explorer 6.0'.
+Removed file Bin\WebServiceMSA.dll.
+Removed file Bin\WebServiceMSA.pdb.
+Removed file WebServiceMSA.csproj.
+Removed file WebServiceMSA.csproj.webinfo.
+Project WebServiceMSA.csproj has been converted successfully at February 09 2006, 11:47:52.

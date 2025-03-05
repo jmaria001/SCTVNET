@@ -1,0 +1,321 @@
+body
+{ 	
+	/*Aplico o tamnho e nome das fonts */
+	
+	background-color : #FFFFFF;
+	font-size:10px;
+	font-family: Arial, Verdana,Helvetica, sans-serif;
+	font-weight:bold;
+	overflow: auto;
+	margin: 0, 0, 0, 0;
+	background : WHITE;
+}
+
+bodyANT
+{ 	
+	/*Aplico o tamnho e nome das fonts */
+	
+	background-color : #FFFFFF;
+	font-size:10px;
+	font-family: Arial, Verdana,Helvetica, sans-serif;
+	font-weight:bold;
+	overflow: auto;
+	margin: 0, 0, 0, 0;
+	
+ 	/*aqui pinto a cor do quadrado da seta do esq. e cima */
+	/*scrollbar-3dlight-color : #E2E2E2;*/
+	/*aqui pinto a cor do quadrado da seta do direita e baixo */
+	/*scrollbar-darkshadow-color : #E2E2E2;*/
+	/*aqui pinto as cores das setas do scroll */
+	/*scrollbar-arrow-color : #f5f5f5;*/
+	/*aqui pinto a cor do scroll DEBAIXO */
+	/*scrollbar-base-color : #f5f5f5;*/
+	/*aqui pinto a barra de rolagem  */
+	/*scrollbar-face-color : #E2E2E2;*/
+	/*scrollbar-highlight-color : #f5f5f5;*/
+	/*scrollbar-shadow-color : #f5f5f5;*/
+	/*scrollbar-track-color : #f5f5f5;*/
+
+	background : WHITE;
+}
+
+a.principal:link
+{
+	color:white;
+	text-decoration:none;
+	font-size:10px;
+	font-family: Arial, Verdana,Helvetica, sans-serif;
+	font-weight:bold;	
+}
+
+/*aqui mudo a cor dos links 01*/
+
+a.principal:visited
+{
+	color:white;
+	text-decoration:none;
+	font-size:10px;
+	font-family: Arial, Verdana,Helvetica, sans-serif;
+	font-weight:bold;
+}
+
+a.principal:hover
+{
+	color:white;
+	text-decoration:underline;
+	font-size:10px;
+	font-family: Arial, Verdana,Helvetica, sans-serif;
+	font-weight:bold;
+}
+
+a.principal:active
+{
+	color:white;
+	text-decoration:white;
+	font-size:10px;
+	font-family: Arial, Verdana,Helvetica, sans-serif;
+	font-weight:bold;
+}
+
+/*aqui mudo a cor dos links 02*/
+
+a:link
+{
+	color : #666666;
+	text-decoration : none;
+	font-size:10px;
+	font-family: Arial, Verdana,Helvetica, sans-serif;
+	font-weight:bold;
+}
+a:visited
+{
+	color : #666666;
+	text-decoration : none;
+	font-size:10px;
+	font-family: Arial, Verdana,Helvetica, sans-serif;
+	font-weight:bold;
+}
+a:hover
+{
+	color : #919191;
+	text-decoration : underline;
+	font-size:10px;
+	font-family: Arial, Verdana,Helvetica, sans-serif;
+	font-weight:bold;
+	
+}
+a:active
+{
+	color : #666666;
+	text-decoration : none;
+	font-size:10px;
+	font-family: Arial, Verdana,Helvetica, sans-serif;
+	font-weight:bold;
+}
+
+Table 
+{
+	background-color: transparent;
+	/*color : #555555;*/
+	font-family: Arial, Verdana,Helvetica, sans-serif;
+	font-size : 10px;
+	font-weight:bold;	
+}
+
+.TextBox
+{
+	background-image:url(Imagens/img_Button_Fita.jpg);
+	background-repeat:repeat-x;
+	background-position:bottom bottom;
+	border-width:1px;
+	border-style:groove;
+	border-color:Silver;
+	font-size:10px;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-weight:bold;
+	color: Black;
+	height:18px;	
+}
+
+
+.DropDownList
+{	
+	background-color:#f5f5f5;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-weight:bold;
+	border-width:1px;
+	border-style:groove;
+	border-color:Silver;
+	color: Black;
+	font-size:10px;
+	height:18px;
+	width:160px;
+}
+
+.TextBoxR
+{
+	background-image:url(Imagens/img_Button_Fita.jpg);
+	background-repeat:repeat-x;
+	background-position:bottom bottom;
+	border-width:1px;
+	border-style:groove;
+	border-color:Silver;
+	font-size:10px;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-weight:bold;
+	text-align:right; 
+	color: Black;
+	height:18px;	
+}
+
+.TextBoxLogin {
+	background: #ffffff;
+	border : solid 1px;
+	color : #000000;
+	font-size:10px;
+	font-family: Arial, Verdana,Helvetica, sans-serif;
+	font-weight:bold;
+	height:18px;
+	width:165px;
+	border-color: #666666;
+	text-transform: uppercase; 
+}
+
+.Button{
+	background:#E0E0E0;
+	background-image:url(Imagens/img_Button_Fita.jpg);
+	background-repeat:repeat-x;
+	background-position:bottom bottom;
+	cursor:hand;
+	vertical-align: middle;
+	border-color:Gray;
+	border-width:1px;
+	border-style:Ridge;
+	font-size:10px;
+	font-family: Arial, Verdana,Helvetica, sans-serif;
+	font-weight:bold;
+	height:20px;
+	width:80px;
+}
+
+.Button02{
+	background:#E0E0E0;
+	background-image:url(Imagens/img_Button_Fita.jpg);
+	background-repeat:repeat-x;
+	cursor:hand;
+	vertical-align: middle;
+	border-color:Gray;
+	border-width:1px;
+	border-style:Ridge;
+	font-size:10px;
+	font-family: Arial, Verdana,Helvetica, sans-serif;
+	font-weight:bold;
+	height:20px;
+	width:130px;
+}
+
+
+.Titulos 
+{
+	background-image:url(Imagens/img_Titulo_Fita.jpg);
+	background-repeat:repeat-x;
+	border-color:Gray;
+	border-width:1px;
+	border-style:Ridge;
+	font-size:12px;
+	font-family: Arial, Verdana,Helvetica, sans-serif;
+	color:#666666;
+	font-weight:bold;
+	text-align:center;
+	height:22px;
+	width:100%;
+}
+
+.Titulos02 
+{
+	background-image:url(Imagens/img_Titulo_Fita.jpg);
+	background-repeat:repeat-x;
+	border-color:#f5f5f5;
+	border-width:1px;
+	border-style:Ridge;
+	font-size:11px;
+	font-family: Arial, Verdana,Helvetica, sans-serif;
+	color:#666666;
+	font-weight:bold;
+	font-weight:bold;
+	text-align:left;
+	height:22px;
+	width:100%;
+}
+
+.TableAlter
+{
+	background-color: #E0E0E0;
+	height:30px;	
+}
+
+
+.Erro
+{
+	color: red;
+	cursor: help;
+	font-size:10px;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-weight:bold;
+}
+
+.td
+{
+	background: #f5f5f5;
+}
+
+
+
+
+/*----- Configuração GridView -----*/
+
+.grv_HeadTable
+{			
+	/*background:#5D7B9D;*/
+	background-image:url(Imagens/img_Titulo_Fita.jpg);
+	background-repeat:repeat-x;
+	background-position:bottom bottom;
+	text-align:center;	
+	border-color:Gray;
+	border-width:1px;
+	border-style:Ridge;
+	font-size:11px;
+	color:#666666;
+	font-family: Arial, Verdana,Helvetica, sans-serif;
+	/*font-weight:bold;*/
+	text-align:center;
+	height:22px;	
+}
+
+.grv_Alter
+{
+	/*background-color: #F7F6F3;		*/
+	background-image:url(Imagens/imgFundoTabela.gif);
+}
+
+.grv_Center
+{
+	text-align:center;
+}
+
+
+/*
+.grv_Border
+{
+	border-bottom:0;
+	border-left:0;
+	border-right:0;
+	border-top:0;
+	border-style:solid;
+
+	border: dimgray 0px solid;
+}*/
+
+
+/*----- Fim da Configuração GridView -----*/
+

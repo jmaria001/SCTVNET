@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsGrade" targetNamespace="http://tempuri.org/dtsGrade.xsd" xmlns:mstns="http://tempuri.org/dtsGrade.xsd" xmlns="http://tempuri.org/dtsGrade.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="sctvConnectionString" IsAppSettingsProperty="True" Modifier="Assembly" Name="sctvConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.sctvConnectionString.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsGrade" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtbGrade">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cod_Veiculo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Data_Exibicao" msdata:DateTimeMode="Unspecified" type="xs:dateTime" />
+              <xs:element name="Cod_Programa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Chave_Acesso" type="xs:short" />
+              <xs:element name="Cod_Faixa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Data_Desativacao" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Id_Faixa" msdata:Caption="Faixa_Horaria" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Horario_Final" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Horario_Inicial" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Indica_Ce" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Indica_Evento" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Indica_Rdi" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Dispo_Net" type="xs:short" />
+              <xs:element name="Dispo_Local" type="xs:short" />
+              <xs:element name="Dispo_Programa" type="xs:short" />
+              <xs:element name="Dispo_Total" type="xs:short" minOccurs="0" />
+              <xs:element name="Absorvido_Local" type="xs:short" />
+              <xs:element name="Absorvido_Net" type="xs:short" minOccurs="0" />
+              <xs:element name="Absorvido_Programa" type="xs:short" />
+              <xs:element name="Reservado_Local" type="xs:short" minOccurs="0" />
+              <xs:element name="Reservado_Net" type="xs:short" minOccurs="0" />
+              <xs:element name="Reservado_Programa" type="xs:short" minOccurs="0" />
+              <xs:element name="Saldo_Local" type="xs:short" />
+              <xs:element name="Saldo_Net" type="xs:short" />
+              <xs:element name="Saldo_Programa" type="xs:short" />
+              <xs:element name="Invasao_Programa" type="xs:short" minOccurs="0" />
+              <xs:element name="Invasao_Local" type="xs:short" minOccurs="0" />
+              <xs:element name="Sequencia_Roteiro" type="xs:short" minOccurs="0" />
+              <xs:element name="Horario_Inicio_Real" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Horario_Final_Real" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Data_Cadastramento" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Cod_Usuario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Titulo" type="xs:string" minOccurs="0" />
+              <xs:element name="Indica_Rotativo" type="xs:unsignedByte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbGrade_Pesquisa">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cod_Veiculo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Data_Exibicao" msdata:DateTimeMode="Unspecified" type="xs:dateTime" />
+              <xs:element name="Cod_Programa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Titulo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Indica_Grade" type="xs:string" minOccurs="0" />
+              <xs:element name="Abrangencia" type="xs:string" minOccurs="0" />
+              <xs:element name="Horario_Inicial" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Horario_Final" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Dispo" type="xs:short" />
+              <xs:element name="Absorvido" type="xs:short" />
+              <xs:element name="Reservado" type="xs:short" minOccurs="0" />
+              <xs:element name="Saldo" type="xs:short" />
+              <xs:element name="Invasao" type="xs:short" minOccurs="0" />
+              <xs:element name="Aguardando_Aprovacao" type="xs:short" minOccurs="0" />
+              <xs:element name="Data_Desativacao" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Indica_Grade_Usuario" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbGrade_Tarefa">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Tarefa" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="Indica_Tarefa_Inclusao" type="xs:boolean" />
+              <xs:element name="Indica_Tarefa_Alteracao" type="xs:boolean" />
+              <xs:element name="Indica_Tarefa_Exclusao" type="xs:boolean" />
+              <xs:element name="Indica_Tarefa_Desativacao" type="xs:boolean" />
+              <xs:element name="Indica_Tarefa_Ativacao" type="xs:boolean" />
+              <xs:element name="Data_Solicitacao" msdata:DateTimeMode="Unspecified" type="xs:dateTime" />
+              <xs:element name="Data_Processamento" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Data_Termino" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Qtde_Critica" type="xs:unsignedShort" minOccurs="0" />
+              <xs:element name="Qtde_Concluida" type="xs:unsignedShort" minOccurs="0" />
+              <xs:element name="Id_Usuario" type="xs:int" />
+              <xs:element name="Cod_Programa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Veiculo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Data_Inicial" msdata:DateTimeMode="Unspecified" type="xs:dateTime" />
+              <xs:element name="Data_Final" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Indica_DiaSemana_01" type="xs:boolean" />
+              <xs:element name="Indica_DiaSemana_02" type="xs:boolean" />
+              <xs:element name="Indica_DiaSemana_03" type="xs:boolean" />
+              <xs:element name="Indica_DiaSemana_04" type="xs:boolean" />
+              <xs:element name="Indica_DiaSemana_05" type="xs:boolean" />
+              <xs:element name="Indica_DiaSemana_06" type="xs:boolean" />
+              <xs:element name="Indica_DiaSemana_07" type="xs:boolean" />
+              <xs:element name="Dispo_Local" type="xs:short" minOccurs="0" />
+              <xs:element name="Id_Faixa" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Horario_Final" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Horario_Inicial" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Situacao" type="xs:string" minOccurs="0" />
+              <xs:element name="Tarefa" type="xs:string" minOccurs="0" />
+              <xs:element name="Usuario" type="xs:string" minOccurs="0" />
+              <xs:element name="Nome_Faixa" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbGrade_Tarefa_Critica">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Tarefa" type="xs:int" />
+              <xs:element name="Critica">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbGrade_Veiculacao_Pesquisa">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cod_Veiculo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Data_Exibicao" msdata:DateTimeMode="Unspecified" type="xs:dateTime" />
+              <xs:element name="Cod_Programa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Abrangencia" type="xs:string" minOccurs="0" />
+              <xs:element name="Cod_Empresa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Chave_Acesso" type="xs:short" minOccurs="0" />
+              <xs:element name="Cod_Nucleo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Cliente" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Agencia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forma_Pgto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Indica_Merchandising" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Cod_Patrocinio" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Tipo_Midia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Caracteristica" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Qualidade" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Duracao" type="xs:short" minOccurs="0" />
+              <xs:element name="Indica_Compensacao" type="xs:int" minOccurs="0" />
+              <xs:element name="Descricao_Produto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Numero_MR" type="xs:int" minOccurs="0" />
+              <xs:element name="Sequencia_MR" type="xs:short" minOccurs="0" />
+              <xs:element name="Indica_Absorcao" type="xs:int" minOccurs="0" />
+              <xs:element name="Indica_Estouro" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Valor" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Valor_Tabela" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Perc_Desconto" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Data_Cadastramento" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Indica_Falha" type="xs:int" minOccurs="0" />
+              <xs:element name="Id_Parametro" type="xs:int" minOccurs="0" />
+              <xs:element name="Descricao_Parametro" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Prioridade" type="xs:int" minOccurs="0" />
+              <xs:element name="Invasao_Local" type="xs:int" minOccurs="0" />
+              <xs:element name="Nome_Agencia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nome_Cliente" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtbGrade" />
+      <xs:field xpath="mstns:Cod_Veiculo" />
+      <xs:field xpath="mstns:Data_Exibicao" />
+      <xs:field xpath="mstns:Cod_Programa" />
+    </xs:unique>
+    <xs:unique name="dtbGrade_Tarefa_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtbGrade_Tarefa" />
+      <xs:field xpath="mstns:Id_Tarefa" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

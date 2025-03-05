@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dtsNucleo" targetNamespace="http://tempuri.org/dtsNucleo.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/dtsNucleo.xsd" xmlns:mstns="http://tempuri.org/dtsNucleo.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="dtsNucleo" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="dtbNucleo">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Cod_Nucleo" type="xs:string" />
+							<xs:element name="Cod_Empresa" type="xs:string" minOccurs="0" />
+							<xs:element name="Cod_Centro_Custo" type="xs:string" minOccurs="0" />
+							<xs:element name="Descricao" type="xs:string" minOccurs="0" />
+							<xs:element name="Cod_Empresa_Faturamento" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="dtsNucleoKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:dtbNucleo" />
+			<xs:field xpath="mstns:Cod_Nucleo" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

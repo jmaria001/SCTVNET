@@ -1,0 +1,149 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A5E88986-9EAB-4A0F-97FA-C246E9700178}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MSAClass</RootNamespace>
+    <AssemblyName>MSAClass</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="asmxAM.cs">
+    </Compile>
+    <Compile Include="asmxBaixaVeiculacao.cs">
+    </Compile>
+    <Compile Include="asmxBreak.cs">
+    </Compile>
+    <Compile Include="asmxChecking.cs" />
+    <Compile Include="asmxContato.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="asmxContrato.cs" />
+    <Compile Include="asmxControleFita.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="asmxEmpresa.cs">
+    </Compile>
+    <Compile Include="asmxFaixaHoraria.cs">
+    </Compile>
+    <Compile Include="asmxFita_Ordenada.cs">
+    </Compile>
+    <Compile Include="asmxGeneric.cs" />
+    <Compile Include="asmxGrade.cs">
+    </Compile>
+    <Compile Include="asmxHistoricoMr.cs">
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="asmxMacAddress.cs">
+    </Compile>
+    <Compile Include="asmxMotivo.cs">
+    </Compile>
+    <Compile Include="asmxNaturezaServico.cs">
+    </Compile>
+    <Compile Include="asmxNucleo.cs">
+    </Compile>
+    <Compile Include="asmxParametro.cs">
+    </Compile>
+    <Compile Include="asmxParametro_Roteiro.cs">
+    </Compile>
+    <Compile Include="asmxPorta.cs">
+    </Compile>
+    <Compile Include="asmxProduto.cs">
+    </Compile>
+    <Compile Include="asmxPrograma.cs">
+    </Compile>
+    <Compile Include="asmxQualidade.cs">
+    </Compile>
+    <Compile Include="asmxRetornoPlayList.cs">
+    </Compile>
+    <Compile Include="asmxRoteiro.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="asmxRoteiroLog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="asmxRoteiro_Confirmacao.cs">
+    </Compile>
+    <Compile Include="asmxRoteiro_Relatorios.cs">
+    </Compile>
+    <Compile Include="asmxTerceiro.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="asmxTipoComercial.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="asmxTipoMidia.cs">
+    </Compile>
+    <Compile Include="asmxUsuario.cs">
+    </Compile>
+    <Compile Include="asmxVeiculo.cs">
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="WSDL_MSA.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

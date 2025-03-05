@@ -1,0 +1,2051 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7B677FF6-F85B-4CB2-8FA9-9769951E4BD2}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>SCTVNET</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SCTVNET.mdiPrincipal</StartupObject>
+    <AssemblyMajorVersion>1</AssemblyMajorVersion>
+    <AssemblyMinorVersion>0</AssemblyMinorVersion>
+    <AssemblyRevisionNumber>348</AssemblyRevisionNumber>
+    <GenerateRevisionNumber>True</GenerateRevisionNumber>
+    <AssemblyCompanyName>SBT</AssemblyCompanyName>
+    <StartWithIE>False</StartWithIE>
+    <RootNamespace>SCTVNET</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <SignManifests>true</SignManifests>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>8A2E9FD4F1BB6E9A8418135776B7436762693654</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Modulo Roteiro_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignAssembly>false</SignAssembly>
+    <ApplicationIcon>satelite.ico</ApplicationIcon>
+    <TargetZone>LocalIntranet</TargetZone>
+    <DelaySign>false</DelaySign>
+    <PublishUrl>D:\SCTVNET_PUBLISH\SCTVNET\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://sctvnethomolog.sbt.com.br/sctvnet/</InstallUrl>
+    <UpdateUrl>http://sctvnethomolog.sbt.com.br/sctvnet/</UpdateUrl>
+    <TargetCulture>pt-BR</TargetCulture>
+    <ProductName>SCTVNET</ProductName>
+    <PublisherName>CARTV Central de Assessoria a Radio e TV</PublisherName>
+    <MinimumRequiredVersion>2.0.1.151</MinimumRequiredVersion>
+    <ApplicationVersion>2.0.1.151</ApplicationVersion>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Absolute</BootstrapperComponentsLocation>
+    <BootstrapperComponentsUrl>http://sctvnet.sbt.com.br/sctvnet/</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\debug\</OutputPath>
+    <DocumentationFile>SCTVNET.xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DefineDebug>True</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win32=True</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+    <WarningLevel>1</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\release\</OutputPath>
+    <DocumentationFile>SCTVNET.xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DefineDebug>False</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win32=True</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.ComctlLib, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>LIB\AxInterop.ComctlLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.MSFlexGridLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>LIB\AxInterop.MSFlexGridLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxMSFlexGridArray, Version=1.0.2277.30024, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>LIB\AxMSFlexGridArray.dll</HintPath>
+    </Reference>
+    <Reference Include="Criptografia, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Criptografia\bin\Debug\Criptografia.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility">
+      <Name>Microsoft.VisualBasic.Compatibility</Name>
+    </Reference>
+    <Reference Include="MSAClass, Version=1.0.5885.27219, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\msaclass\bin\Debug\MSAClass.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.XML">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="WCL_SCTV, Version=1.0.4913.20074, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WCL_SCTV\bin\Debug\WCL_SCTV.dll</HintPath>
+    </Reference>
+    <Reference Include="WUC, Version=1.0.5885.27173, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\wuc\WUC\bin\Debug\WUC.dll</HintPath>
+    </Reference>
+    <COMReference Include="ComctlLib">
+      <Guid>{6B7E6392-850A-101B-AFC0-4210102A8DA7}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MSFlexGridLib">
+      <Guid>{5E9E78A0-531B-11CF-91F6-C2863C385E30}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="AxMSFlexGridArray" />
+    <Import Include="AxMSFlexGridLib" />
+    <Import Include="ComctlLib" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.Compatibility" />
+    <Import Include="MSFlexGridLib" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formularios\Acesso.designer.vb">
+      <DependentUpon>Acesso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Acesso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Baixa_Automatica.designer.vb">
+      <DependentUpon>Baixa_Automatica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Baixa_Automatica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Baixa_Horario_Exibicao_Programa.designer.vb">
+      <DependentUpon>Baixa_Horario_Exibicao_Programa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Baixa_Horario_Exibicao_Programa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Composicao.designer.vb">
+      <DependentUpon>Composicao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Composicao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ComposicaoBreaks.designer.vb">
+      <DependentUpon>ComposicaoBreaks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ComposicaoBreaks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConsultaFitaOrdenada.designer.vb">
+      <DependentUpon>ConsultaFitaOrdenada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ConsultaFitaOrdenada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConsultaOrdenado.designer.vb">
+      <DependentUpon>ConsultaOrdenado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ConsultaOrdenado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ControleFita_Afiliada_Numeracao.designer.vb">
+      <DependentUpon>ControleFita_Afiliada_Numeracao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ControleFita_Afiliada_Numeracao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Controle_Fita_Afiliada.designer.vb">
+      <DependentUpon>Controle_Fita_Afiliada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Controle_Fita_Afiliada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Controle_Fita_Afiliada_Dado.Designer.vb">
+      <DependentUpon>Controle_Fita_Afiliada_Dado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Controle_Fita_Afiliada_Dado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Controle_Fita_Afiliada_Inclusao.designer.vb">
+      <DependentUpon>Controle_Fita_Afiliada_Inclusao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Controle_Fita_Afiliada_Inclusao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\CustomGrid.designer.vb">
+      <DependentUpon>CustomGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\CustomGrid.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Formularios\DadosAM.designer.vb">
+      <DependentUpon>DadosAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\DadosAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Diretorio.designer.vb">
+      <DependentUpon>Diretorio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Diretorio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAM.Designer.vb">
+      <DependentUpon>frmAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAmFiltro.Designer.vb">
+      <DependentUpon>frmAmFiltro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAmFiltro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAmReencaixe.Designer.vb">
+      <DependentUpon>frmAmReencaixe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAmReencaixe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmApresentacao.designer.vb">
+      <DependentUpon>frmApresentacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmApresentacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmBaixaContrato.Designer.vb">
+      <DependentUpon>frmBaixaContrato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmBaixaContrato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmBaixaRoteiro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmBreaksDesconsiderados.Designer.vb">
+      <DependentUpon>frmBreaksDesconsiderados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmBreaksDesconsiderados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmComercial.designer.vb">
+      <DependentUpon>frmComercial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmComercial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmComparaRoteiroData.designer.vb">
+      <DependentUpon>frmComparaRoteiroData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmComparaRoteiroData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmComparaRoteiroV2.Designer.vb">
+      <DependentUpon>frmComparaRoteiroV2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmComparaRoteiroV2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmConfirmacaoRoteiro.Designer.vb">
+      <DependentUpon>frmConfirmacaoRoteiro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmConfirmacaoRoteiro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmConfirmacoes.designer.vb">
+      <DependentUpon>frmConfirmacoes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmConfirmacoes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmConsulta.designer.vb">
+      <DependentUpon>frmConsulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmConsulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmConsultaFitasPatrocinio.Designer.vb">
+      <DependentUpon>frmConsultaFitasPatrocinio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmConsultaFitasPatrocinio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmConsultaGrade.designer.vb">
+      <DependentUpon>frmConsultaGrade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmConsultaGrade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmControleFitaPatrocinio.Designer.vb">
+      <DependentUpon>frmControleFitaPatrocinio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmControleFitaPatrocinio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmCriticaCe.Designer.vb">
+      <DependentUpon>frmCriticaCe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmCriticaCe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmDadosLista.Designer.vb">
+      <DependentUpon>frmDadosLista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmDadosLista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmDeterminacao.designer.vb">
+      <DependentUpon>frmDeterminacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmDeterminacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmDeterminacaoComercial.designer.vb">
+      <DependentUpon>frmDeterminacaoComercial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmDeterminacaoComercial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmDeterminacaoConsulta.designer.vb">
+      <DependentUpon>frmDeterminacaoConsulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmDeterminacaoConsulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmErro.designer.vb">
+      <DependentUpon>frmErro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmErro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmGrade.Designer.vb">
+      <DependentUpon>frmGrade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmGrade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmGradeExibicao.Designer.vb">
+      <DependentUpon>frmGradeExibicao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmGradeExibicao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmGradeOperacoes.Designer.vb">
+      <DependentUpon>frmGradeOperacoes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmGradeOperacoes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmImpressaoCe.Designer.vb">
+      <DependentUpon>frmImpressaoCe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmImpressaoCe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmMapaReserva.designer.vb">
+      <DependentUpon>frmMapaReserva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmMapaReserva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmMrStatus.Designer.vb">
+      <DependentUpon>frmMrStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmMrStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmProdutoCadastro.Designer.vb">
+      <DependentUpon>frmProdutoCadastro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmProdutoCadastro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmprogramacaoprevista.designer.vb">
+      <DependentUpon>frmprogramacaoprevista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmprogramacaoprevista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmReabreCe.Designer.vb">
+      <DependentUpon>frmReabreCe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmReabreCe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmRelatorio_Checking.designer.vb">
+      <DependentUpon>frmRelatorio_Checking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmRelatorio_Checking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmImpressao.Designer.vb">
+      <DependentUpon>frmImpressao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmImpressao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmRelatorio_Roteiro.designer.vb">
+      <DependentUpon>frmRelatorio_Roteiro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmRelatorio_Roteiro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmRoteiroDados.designer.vb">
+      <DependentUpon>frmRoteiroDados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmRoteiroDados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmRoteiroV2.designer.vb">
+      <DependentUpon>frmRoteiroV2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmRoteiroV2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmRoteiro_Encerramento.designer.vb">
+      <DependentUpon>frmRoteiro_Encerramento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmRoteiro_Encerramento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmRoteiro_Log.designer.vb">
+      <DependentUpon>frmRoteiro_Log.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmRoteiro_Log.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmRoteiro_Replicacao.designer.vb">
+      <DependentUpon>frmRoteiro_Replicacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmRoteiro_Replicacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmRoteiro_Usuario.designer.vb">
+      <DependentUpon>frmRoteiro_Usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmRoteiro_Usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmSelecaoMapa.designer.vb">
+      <DependentUpon>frmSelecaoMapa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmSelecaoMapa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmSelecaoPrograma.designer.vb">
+      <DependentUpon>frmSelecaoPrograma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmSelecaoPrograma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmSelecaoVeiculo.designer.vb">
+      <DependentUpon>frmSelecaoVeiculo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmSelecaoVeiculo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmSolucaoAM.Designer.vb">
+      <DependentUpon>frmSolucaoAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmSolucaoAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmTempoBreakV2.Designer.vb">
+      <DependentUpon>frmTempoBreakV2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmTempoBreakV2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmTerceiro.designer.vb">
+      <DependentUpon>frmTerceiro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmTerceiro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmTerceiroEmpresa.designer.vb">
+      <DependentUpon>frmTerceiroEmpresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmTerceiroEmpresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmTerceiroFiltro.Designer.vb">
+      <DependentUpon>frmTerceiroFiltro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmTerceiroFiltro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmTerceiroMotivoCancelamento.designer.vb">
+      <DependentUpon>frmTerceiroMotivoCancelamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmTerceiroMotivoCancelamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmTerceiroProduto.designer.vb">
+      <DependentUpon>frmTerceiroProduto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmTerceiroProduto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmTerceiro_Cadastro.designer.vb">
+      <DependentUpon>frmTerceiro_Cadastro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmTerceiro_Cadastro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Horario_Programacao.designer.vb">
+      <DependentUpon>Horario_Programacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Horario_Programacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\IntegraPlayList_Afiliada.designer.vb">
+      <DependentUpon>IntegraPlayList_Afiliada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\IntegraPlayList_Afiliada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PreOrdenacao.designer.vb">
+      <DependentUpon>PreOrdenacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PreOrdenacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Principal.designer.vb">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmConsisteBreak.designer.vb">
+      <DependentUpon>frmConsisteBreak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmConsisteBreak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmOpcoesGrid.designer.vb">
+      <DependentUpon>frmOpcoesGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmOpcoesGrid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmRoteiroConsistencia.designer.vb">
+      <DependentUpon>frmRoteiroConsistencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmRoteiroConsistencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmUsuario_AlterarSenha.designer.vb">
+      <DependentUpon>frmUsuario_AlterarSenha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmUsuario_AlterarSenha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmBaixaRoteiro.designer.vb">
+      <DependentUpon>frmBaixaRoteiro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmBaixaVeiculacao.designer.vb">
+      <DependentUpon>frmBaixaVeiculacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmBaixaVeiculacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmMRConsulta.designer.vb">
+      <DependentUpon>frmMRConsulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmMRConsulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmMRConsultaFiltro.designer.vb">
+      <DependentUpon>frmMRConsultaFiltro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmMRConsultaFiltro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAmEncerrada.Designer.vb">
+      <DependentUpon>frmAmEncerrada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAmEncerrada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Retorno_Play_List.designer.vb">
+      <DependentUpon>Retorno_Play_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Retorno_Play_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Roteiro01.designer.vb">
+      <DependentUpon>Roteiro01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Roteiro01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\modNewClass.vb" />
+    <Compile Include="Modulos\modSCTV.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Relatorios\rptCe.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptCe.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\Relatorios\rptChecking.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptChecking.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="obj\Relatorios\rptRoteiro.vb">
+      <DependentUpon>rptRoteiro.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <EmbeddedResource Include="Formularios\frmConsisteBreak.resX">
+      <DependentUpon>frmConsisteBreak.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmOpcoesGrid.resX">
+      <DependentUpon>frmOpcoesGrid.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmImpressao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmImpressao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmRoteiroConsistencia.resX">
+      <DependentUpon>frmRoteiroConsistencia.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmRoteiroDados.resX">
+      <DependentUpon>frmRoteiroDados.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Relatorios\rptChecking.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptChecking.vb</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Formularios\Acesso.resx">
+      <DependentUpon>Acesso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Baixa_Automatica.resX">
+      <DependentUpon>Baixa_Automatica.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Baixa_Horario_Exibicao_Programa.resx">
+      <DependentUpon>Baixa_Horario_Exibicao_Programa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Composicao.resx">
+      <DependentUpon>Composicao.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ComposicaoBreaks.resx">
+      <DependentUpon>ComposicaoBreaks.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ConsultaFitaOrdenada.resx">
+      <DependentUpon>ConsultaFitaOrdenada.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ConsultaOrdenado.resx">
+      <DependentUpon>ConsultaOrdenado.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ControleFita_Afiliada_Numeracao.resx">
+      <DependentUpon>ControleFita_Afiliada_Numeracao.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Controle_Fita_Afiliada.resx">
+      <DependentUpon>Controle_Fita_Afiliada.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Controle_Fita_Afiliada_Dado.resx">
+      <DependentUpon>Controle_Fita_Afiliada_Dado.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Controle_Fita_Afiliada_Inclusao.resx">
+      <DependentUpon>Controle_Fita_Afiliada_Inclusao.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\DadosAM.resx">
+      <DependentUpon>DadosAM.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Diretorio.resX">
+      <DependentUpon>Diretorio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAM.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAmFiltro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAmFiltro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAmReencaixe.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAmReencaixe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmApresentacao.resx">
+      <DependentUpon>frmApresentacao.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmBaixaContrato.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBaixaContrato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmBaixaRoteiro.resx">
+      <DependentUpon>frmBaixaRoteiro.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmBreaksDesconsiderados.resX">
+      <DependentUpon>frmBreaksDesconsiderados.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmComercial.resx">
+      <DependentUpon>frmComercial.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmComparaRoteiroData.resx">
+      <DependentUpon>frmComparaRoteiroData.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmComparaRoteiroV2.resX">
+      <DependentUpon>frmComparaRoteiroV2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmConfirmacaoRoteiro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConfirmacaoRoteiro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmConfirmacoes.resX">
+      <DependentUpon>frmConfirmacoes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmConsulta.resx">
+      <DependentUpon>frmConsulta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmConsultaFitasPatrocinio.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaFitasPatrocinio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmConsultaGrade.resx">
+      <DependentUpon>frmConsultaGrade.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmControleFitaPatrocinio.resx">
+      <DependentUpon>frmControleFitaPatrocinio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmCriticaCe.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCriticaCe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmDadosLista.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDadosLista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmDeterminacao.resx">
+      <DependentUpon>frmDeterminacao.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmDeterminacaoComercial.resx">
+      <DependentUpon>frmDeterminacaoComercial.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmDeterminacaoConsulta.resx">
+      <DependentUpon>frmDeterminacaoConsulta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmErro.resx">
+      <DependentUpon>frmErro.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmGrade.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGrade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmGradeExibicao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGradeExibicao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmGradeOperacoes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGradeOperacoes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmImpressaoCe.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmImpressaoCe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmMapaReserva.resx">
+      <DependentUpon>frmMapaReserva.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmMrStatus.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMrStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmProdutoCadastro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmProdutoCadastro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmprogramacaoprevista.resx">
+      <DependentUpon>frmprogramacaoprevista.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmReabreCe.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmReabreCe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmRelatorio_Checking.resx">
+      <DependentUpon>frmRelatorio_Checking.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmRelatorio_Roteiro.resx">
+      <DependentUpon>frmRelatorio_Roteiro.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmRoteiroV2.resx">
+      <DependentUpon>frmRoteiroV2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmRoteiro_Encerramento.resx">
+      <DependentUpon>frmRoteiro_Encerramento.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmRoteiro_Log.resx">
+      <DependentUpon>frmRoteiro_Log.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmRoteiro_Replicacao.resx">
+      <DependentUpon>frmRoteiro_Replicacao.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmRoteiro_Usuario.resx">
+      <DependentUpon>frmRoteiro_Usuario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmSelecaoMapa.resx">
+      <DependentUpon>frmSelecaoMapa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmSelecaoPrograma.resx">
+      <DependentUpon>frmSelecaoPrograma.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmSelecaoVeiculo.resx">
+      <DependentUpon>frmSelecaoVeiculo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmSolucaoAM.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSolucaoAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmTempoBreakV2.resX">
+      <DependentUpon>frmTempoBreakV2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmTerceiro.resx">
+      <DependentUpon>frmTerceiro.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmTerceiroEmpresa.resx">
+      <DependentUpon>frmTerceiroEmpresa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmTerceiroFiltro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTerceiroFiltro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmTerceiroMotivoCancelamento.resx">
+      <DependentUpon>frmTerceiroMotivoCancelamento.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmTerceiroProduto.resx">
+      <DependentUpon>frmTerceiroProduto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmTerceiro_Cadastro.resx">
+      <DependentUpon>frmTerceiro_Cadastro.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Horario_Programacao.resx">
+      <DependentUpon>Horario_Programacao.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\IntegraPlayList_Afiliada.resx">
+      <DependentUpon>IntegraPlayList_Afiliada.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PreOrdenacao.resx">
+      <DependentUpon>PreOrdenacao.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Principal.resx">
+      <DependentUpon>Principal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmUsuario_AlterarSenha.resx">
+      <DependentUpon>frmUsuario_AlterarSenha.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmBaixaVeiculacao.resx">
+      <DependentUpon>frmBaixaVeiculacao.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmMRConsulta.resx">
+      <DependentUpon>frmMRConsulta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmMRConsultaFiltro.resx">
+      <DependentUpon>frmMRConsultaFiltro.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAmEncerrada.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAmEncerrada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Retorno_Play_List.resx">
+      <DependentUpon>Retorno_Play_List.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Roteiro01.resx">
+      <DependentUpon>Roteiro01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagens\mao01.cur" />
+    <EmbeddedResource Include="Imagens\mao02.cur" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Relatorios\rptCe.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCe.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Relatorios\rptRoteiro.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRoteiro.vb</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config">
+    </None>
+    <None Include="Help_Roteiro\Help\MasterHelp.master" />
+    <None Include="Help_Roteiro\Imagens\fonte_logo_msa.psd" />
+    <None Include="LIB\Modulo Roteiro_1_TemporaryKey.pfx" />
+    <None Include="Modulo Roteiro_TemporaryKey.pfx" />
+    <Content Include="Help_Roteiro\Help\aspxHelp.aspx" />
+    <Content Include="Help_Roteiro\Help\aspxHelp.aspx.cs" />
+    <Content Include="Help_Roteiro\Help\Default.aspx" />
+    <Content Include="Help_Roteiro\Help\Default.aspx.cs" />
+    <Content Include="Help_Roteiro\Help\helpAjustarHorarioProgramacao.aspx" />
+    <Content Include="Help_Roteiro\Help\helpAjustarHorarioProgramacao.aspx.cs" />
+    <Content Include="Help_Roteiro\Help\helpaspxBreaksNConsiderados.aspx" />
+    <Content Include="Help_Roteiro\Help\helpaspxBreaksNConsiderados.aspx.cs" />
+    <Content Include="Help_Roteiro\Help\helpaspxComparacaoRoteiro.aspx" />
+    <Content Include="Help_Roteiro\Help\helpaspxComparacaoRoteiro.aspx.cs" />
+    <Content Include="Help_Roteiro\Help\helpaspxComposicaoBreak.aspx" />
+    <Content Include="Help_Roteiro\Help\helpaspxComposicaoBreak.aspx.cs" />
+    <Content Include="Help_Roteiro\Help\helpaspxConsultaFitasOrdenadas.aspx" />
+    <Content Include="Help_Roteiro\Help\helpaspxConsultaFitasOrdenadas.aspx.cs" />
+    <Content Include="Help_Roteiro\Help\helpaspxConsultaRoteiroOrdenado.aspx" />
+    <Content Include="Help_Roteiro\Help\helpaspxConsultaRoteiroOrdenado.aspx.cs" />
+    <Content Include="Help_Roteiro\Help\helpaspxControleFitas.aspx" />
+    <Content Include="Help_Roteiro\Help\helpaspxControleFitas.aspx.cs" />
+    <Content Include="Help_Roteiro\Help\helpaspxEncerramentoRoteiro.aspx" />
+    <Content Include="Help_Roteiro\Help\helpaspxEncerramentoRoteiro.aspx.cs" />
+    <Content Include="Help_Roteiro\Help\helpaspxHorarioRealProgramacao.aspx" />
+    <Content Include="Help_Roteiro\Help\helpaspxHorarioRealProgramacao.aspx.cs" />
+    <Content Include="Help_Roteiro\Help\helpaspxListaDiariaChecking.aspx" />
+    <Content Include="Help_Roteiro\Help\helpaspxListaDiariaChecking.aspx.cs" />
+    <Content Include="Help_Roteiro\Help\helpaspxLogRoteiro.aspx" />
+    <Content Include="Help_Roteiro\Help\helpaspxLogRoteiro.aspx.cs" />
+    <Content Include="Help_Roteiro\Help\helpaspxOrdenacao.aspx" />
+    <Content Include="Help_Roteiro\Help\helpaspxOrdenacao.aspx.cs" />
+    <Content Include="Help_Roteiro\Help\helpaspxPlayList.aspx" />
+    <Content Include="Help_Roteiro\Help\helpaspxPlayList.aspx.cs" />
+    <Content Include="Help_Roteiro\Help\helpaspxPreOrdenacao.aspx" />
+    <Content Include="Help_Roteiro\Help\helpaspxPreOrdenacao.aspx.cs" />
+    <Content Include="Help_Roteiro\Help\helpaspxReplicacaoRoteiro.aspx" />
+    <Content Include="Help_Roteiro\Help\helpaspxReplicacaoRoteiro.aspx.cs" />
+    <Content Include="Help_Roteiro\Help\helpaspxRetornoPlayList.aspx" />
+    <Content Include="Help_Roteiro\Help\helpaspxRetornoPlayList.aspx.cs" />
+    <Content Include="Help_Roteiro\Help\helpaspxRoteiroTecnico.aspx" />
+    <Content Include="Help_Roteiro\Help\helpaspxRoteiroTecnico.aspx.cs" />
+    <Content Include="Help_Roteiro\Help\helpaspxUsuariosRoteiro.aspx" />
+    <Content Include="Help_Roteiro\Help\helpaspxUsuariosRoteiro.aspx.cs" />
+    <Content Include="Help_Roteiro\Help\MasterHelp.master.cs" />
+    <Content Include="Help_Roteiro\Imagens\Confirmar.gif" />
+    <Content Include="Help_Roteiro\Imagens\editar.gif" />
+    <Content Include="Help_Roteiro\Imagens\imgAlterar.gif" />
+    <Content Include="Help_Roteiro\Imagens\imgAtivar.gif" />
+    <Content Include="Help_Roteiro\Imagens\imgBlocked.gif" />
+    <Content Include="Help_Roteiro\Imagens\imgCalendario.gif" />
+    <Content Include="Help_Roteiro\Imagens\imgCancelar.gif" />
+    <Content Include="Help_Roteiro\Imagens\imgChecked.gif" />
+    <Content Include="Help_Roteiro\Imagens\imgClear.gif" />
+    <Content Include="Help_Roteiro\Imagens\imgConfirmar.gif" />
+    <Content Include="Help_Roteiro\Imagens\imgCritica.gif" />
+    <Content Include="Help_Roteiro\Imagens\imgDenied_Access.gif" />
+    <Content Include="Help_Roteiro\Imagens\imgDesativar.gif" />
+    <Content Include="Help_Roteiro\Imagens\imgEmpty_Session.gif" />
+    <Content Include="Help_Roteiro\Imagens\imgEndereco.gif" />
+    <Content Include="Help_Roteiro\Imagens\imgExcluir.gif" />
+    <Content Include="Help_Roteiro\Imagens\imgfundotabela.gif" />
+    <Content Include="Help_Roteiro\Imagens\imgLocalizar.gif" />
+    <Content Include="Help_Roteiro\Imagens\imgNovoRegistro.gif" />
+    <Content Include="Help_Roteiro\Imagens\imgUnChecked.gif" />
+    <Content Include="Help_Roteiro\Imagens\img_Agendado.gif" />
+    <Content Include="Help_Roteiro\Imagens\img_Blocos.gif" />
+    <Content Include="Help_Roteiro\Imagens\img_Button_Fita.jpg" />
+    <Content Include="Help_Roteiro\Imagens\img_Copyright.jpg" />
+    <Content Include="Help_Roteiro\Imagens\img_copyright_login.jpg" />
+    <Content Include="Help_Roteiro\Imagens\img_FitaTable.jpg" />
+    <Content Include="Help_Roteiro\Imagens\img_Fita_Azul.gif" />
+    <Content Include="Help_Roteiro\Imagens\img_Fita_Branca_Login.jpg" />
+    <Content Include="Help_Roteiro\Imagens\img_Fita_Cabecalho01.jpg" />
+    <Content Include="Help_Roteiro\Imagens\img_Fita_Cabecalho02.jpg" />
+    <Content Include="Help_Roteiro\Imagens\img_fita_cabecalho_b.gif" />
+    <Content Include="Help_Roteiro\Imagens\img_Fita_Cinza_Login.jpg" />
+    <Content Include="Help_Roteiro\Imagens\img_Fita_Login.jpg" />
+    <Content Include="Help_Roteiro\Imagens\img_Fita_Rodape01.jpg" />
+    <Content Include="Help_Roteiro\Imagens\img_Fita_Rodape02.jpg" />
+    <Content Include="Help_Roteiro\Imagens\img_Logado_relogio.gif" />
+    <Content Include="Help_Roteiro\Imagens\img_login.jpg" />
+    <Content Include="Help_Roteiro\Imagens\img_Logo_msa_login.jpg" />
+    <Content Include="Help_Roteiro\Imagens\img_Logo_Sbt.gif" />
+    <Content Include="Help_Roteiro\Imagens\img_Logo_Sbt_Login.gif" />
+    <Content Include="Help_Roteiro\Imagens\img_Logo_Sbt_Login.jpg" />
+    <Content Include="Help_Roteiro\Imagens\img_Ponto_Login.gif" />
+    <Content Include="Help_Roteiro\Imagens\img_Ponto_Login02.gif" />
+    <Content Include="Help_Roteiro\Imagens\img_sbt_Cabecalho.gif" />
+    <Content Include="Help_Roteiro\Imagens\img_Setar.png" />
+    <Content Include="Help_Roteiro\Imagens\img_Seta_Cabecalho.gif" />
+    <Content Include="Help_Roteiro\Imagens\img_Titulo_Fita.jpg" />
+    <Content Include="Help_Roteiro\Imagens\img_versao_Login.jpg" />
+    <Content Include="Help_Roteiro\Imagens\img_versao_rodape.jpg" />
+    <Content Include="Help_Roteiro\Imagens\logo_msc.jpg" />
+    <Content Include="Help_Roteiro\Imagens\logo_msc_2.jpg" />
+    <Content Include="Help_Roteiro\Imagens\logo_msc_linhas.jpg" />
+    <Content Include="Help_Roteiro\Imagens\logo_sctvweb.jpg" />
+    <Content Include="Imagens\BINOCULR.ICO" />
+    <Content Include="Imagens\imgChecked.gif" />
+    <Content Include="Imagens\imgUnChecked.gif" />
+    <None Include="Imagens\SCTVHOMOLOG.JPG" />
+    <Content Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </Content>
+    <BaseApplicationManifest Include="My Project\app.manifest" />
+    <None Include="Resources\ERRO.png" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\Alterar1.ico" />
+    <None Include="Resources\Lixeira.ico" />
+    <None Include="Resources\Binocolo.ico" />
+    <None Include="Resources\produto.png" />
+    <None Include="Resources\Empresas.png" />
+    <None Include="Resources\Sair.ico" />
+    <None Include="Resources\NovaSequencia.png" />
+    <None Include="Resources\CANCEL.png" />
+    <None Include="Resources\CANCELAR.png" />
+    <None Include="Resources\cancelar2.png" />
+    <None Include="Resources\Sair1.ico" />
+    <None Include="Resources\NUMERACAO_FITA.JPG" />
+    <None Include="Resources\LUPA.png" />
+    <None Include="Resources\LUPA2.png" />
+    <None Include="Resources\Novo SCTV1.jpg" />
+    <None Include="Resources\Novo SCTV2.jpg" />
+    <None Include="Resources\Novo SCTV3.jpg" />
+    <None Include="Resources\Alterar11.ico" />
+    <None Include="Resources\Novo SCTV4.jpg" />
+    <None Include="Resources\Reencaixar.png" />
+    <None Include="Resources\SCTV.jpg" />
+    <None Include="Resources\OK.png" />
+    <Content Include="satelite.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Help_Roteiro\Help\aspxHelp.aspx">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\aspxHelp.aspx.cs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\Default.aspx">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\Default.aspx.cs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpAjustarHorarioProgramacao.aspx">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpAjustarHorarioProgramacao.aspx.cs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxBreaksNConsiderados.aspx">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxBreaksNConsiderados.aspx.cs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxComparacaoRoteiro.aspx">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxComparacaoRoteiro.aspx.cs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxComposicaoBreak.aspx">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxComposicaoBreak.aspx.cs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxConsultaFitasOrdenadas.aspx">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxConsultaFitasOrdenadas.aspx.cs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxConsultaRoteiroOrdenado.aspx">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxConsultaRoteiroOrdenado.aspx.cs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxControleFitas.aspx">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxControleFitas.aspx.cs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxEncerramentoRoteiro.aspx">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxEncerramentoRoteiro.aspx.cs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxHorarioRealProgramacao.aspx">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxHorarioRealProgramacao.aspx.cs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxListaDiariaChecking.aspx">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxListaDiariaChecking.aspx.cs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxLogRoteiro.aspx">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxLogRoteiro.aspx.cs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxOrdenacao.aspx">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxOrdenacao.aspx.cs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxPlayList.aspx">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxPlayList.aspx.cs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxPreOrdenacao.aspx">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxPreOrdenacao.aspx.cs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxReplicacaoRoteiro.aspx">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxReplicacaoRoteiro.aspx.cs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxRetornoPlayList.aspx">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxRetornoPlayList.aspx.cs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxRoteiroTecnico.aspx">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxRoteiroTecnico.aspx.cs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxUsuariosRoteiro.aspx">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\helpaspxUsuariosRoteiro.aspx.cs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Help\MasterHelp.master.cs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\Confirmar.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\editar.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\imgAlterar.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\imgAtivar.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\imgBlocked.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\imgCalendario.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\imgCancelar.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\imgChecked.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\imgClear.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\imgConfirmar.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\imgCritica.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\imgDenied_Access.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\imgDesativar.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\imgEmpty_Session.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\imgEndereco.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\imgExcluir.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\imgfundotabela.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\imgLocalizar.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\imgNovoRegistro.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\imgUnChecked.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_Agendado.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_Blocos.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_Button_Fita.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_Copyright.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_copyright_login.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_FitaTable.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_Fita_Azul.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_Fita_Branca_Login.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_Fita_Cabecalho01.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_Fita_Cabecalho02.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_fita_cabecalho_b.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_Fita_Cinza_Login.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_Fita_Login.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_Fita_Rodape01.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_Fita_Rodape02.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_Logado_relogio.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_login.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_Logo_msa_login.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_Logo_Sbt.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_Logo_Sbt_Login.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_Logo_Sbt_Login.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_Ponto_Login.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_Ponto_Login02.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_sbt_Cabecalho.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_Setar.png">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_Seta_Cabecalho.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_Titulo_Fita.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_versao_Login.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\img_versao_rodape.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\logo_msc.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\logo_msc_2.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\logo_msc_linhas.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Help_Roteiro\Imagens\logo_sctvweb.jpg">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="Help_Roteiro\App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsUsuario" targetNamespace="http://tempuri.org/dtsUsuario.xsd" xmlns:mstns="http://tempuri.org/dtsUsuario.xsd" xmlns="http://tempuri.org/dtsUsuario.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsUsuario" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtbUsuario">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_Usuario" type="xs:int" />
+              <xs:element name="Usuario" type="xs:string" minOccurs="0" />
+              <xs:element name="Nome" type="xs:string" />
+              <xs:element name="EMail" type="xs:string" minOccurs="0" />
+              <xs:element name="Tipo_Acesso" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Senha" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbUsuario_MSAFuncao">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_Usuario" type="xs:int" minOccurs="0" />
+              <xs:element name="Cod_Funcao" type="xs:int" />
+              <xs:element name="Cod_Root" type="xs:int" />
+              <xs:element name="Nome_Funcao" type="xs:string" minOccurs="0" />
+              <xs:element name="Objeto_Name_MSA" type="xs:string" />
+              <xs:element name="Objeto_Name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbUsuario_Empresa">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_Usuario" type="xs:int" minOccurs="0" />
+              <xs:element name="Cod_Empresa" type="xs:string" minOccurs="0" />
+              <xs:element name="Razao_Social" type="xs:string" minOccurs="0" />
+              <xs:element name="Descricao" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbUsuario_Veiculo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_Usuario" type="xs:int" minOccurs="0" />
+              <xs:element name="Cod_Veiculo" type="xs:string" minOccurs="0" />
+              <xs:element name="Nome_Veiculo" type="xs:string" minOccurs="0" />
+              <xs:element name="Sigla_Veiculo" type="xs:string" minOccurs="0" />
+              <xs:element name="Sigla_Roteiro" type="xs:string" minOccurs="0" />
+              <xs:element name="Hora_Inicio_Programacao" type="xs:string" minOccurs="0" />
+              <xs:element name="Descricao" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbUsuario_Programa">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_Usuario" type="xs:int" minOccurs="0" />
+              <xs:element name="Cod_Programa" type="xs:string" />
+              <xs:element name="Titulo" type="xs:string" minOccurs="0" />
+              <xs:element name="Cod_Genero" type="xs:string" minOccurs="0" />
+              <xs:element name="Indica_Desativado" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Indica_Evento" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Indica_Rotativo" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Indica_Local" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Key_dtbUsuario" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtbUsuario" />
+      <xs:field xpath="mstns:ID_Usuario" />
+    </xs:unique>
+    <xs:keyref name="FK_dtbUsuario_dtbUsuario_Programa" refer="Key_dtbUsuario" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:dtbUsuario_Programa" />
+      <xs:field xpath="mstns:ID_Usuario" />
+    </xs:keyref>
+    <xs:keyref name="FK_dtbUsuario_dtbUsuario_Veiculo" refer="Key_dtbUsuario" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:dtbUsuario_Veiculo" />
+      <xs:field xpath="mstns:ID_Usuario" />
+    </xs:keyref>
+    <xs:keyref name="FK_dtbUsuario_dtbUsuario_Empresa" refer="Key_dtbUsuario" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:dtbUsuario_Empresa" />
+      <xs:field xpath="mstns:ID_Usuario" />
+    </xs:keyref>
+    <xs:keyref name="FK_dtbUsuario_dtbUsuario_MSAFuncao" refer="Key_dtbUsuario" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:dtbUsuario_MSAFuncao" />
+      <xs:field xpath="mstns:ID_Usuario" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

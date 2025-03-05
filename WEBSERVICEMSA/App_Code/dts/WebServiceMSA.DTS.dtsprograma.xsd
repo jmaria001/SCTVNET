@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsPrograma" targetNamespace="http://tempuri.org/dtsPrograma.xsd" xmlns:mstns="http://tempuri.org/dtsPrograma.xsd" xmlns="http://tempuri.org/dtsPrograma.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="sctvConnectionString" IsAppSettingsProperty="True" Modifier="Assembly" Name="sctvConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.sctvConnectionString.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsPrograma" msdata:IsDataSet="true" msdata:Locale="en-US">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtbPrograma">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cod_Programa" type="xs:string" />
+              <xs:element name="Titulo" type="xs:string" minOccurs="0" />
+              <xs:element name="Cod_Genero" type="xs:string" minOccurs="0" />
+              <xs:element name="Indica_Desativado" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Indica_Evento" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Indica_Rotativo" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Indica_Local" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbPrograma_Veiculo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cod_Programa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Genero">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Data_Desativacao" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Indica_Desativado" type="xs:unsignedByte" />
+              <xs:element name="Indica_Evento" type="xs:unsignedByte" />
+              <xs:element name="Indica_Rotativo" type="xs:unsignedByte" />
+              <xs:element name="Indica_Local" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Titulo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Data_Cadastramento" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Cod_Usuario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Indica_Ce_Exibido" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="indica_pss" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Tipo_Programa" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Cod_A_JOVE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_N_JOVE" type="xs:short" minOccurs="0" />
+              <xs:element name="Cod_Veiculo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Indica_AoVivo" type="xs:unsignedByte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtbPrograma" />
+      <xs:field xpath="mstns:Cod_Programa" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="dtbPrograma_dtbPrograma_Veiculo" msdata:parent="dtbPrograma" msdata:child="dtbPrograma_Veiculo" msdata:parentkey="Cod_Programa" msdata:childkey="Cod_Programa" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

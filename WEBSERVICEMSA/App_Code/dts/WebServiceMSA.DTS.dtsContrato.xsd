@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsContrato" targetNamespace="http://tempuri.org/dtsContrato.xsd" xmlns:mstns="http://tempuri.org/dtsContrato.xsd" xmlns="http://tempuri.org/dtsContrato.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="SCTVConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="SCTVConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.SCTVConnectionString.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsContrato" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Contrato">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cod_Empresa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Numero_Mr" type="xs:int" />
+              <xs:element name="Numero_Negociacao" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Sequencia_Mr" type="xs:short" />
+              <xs:element name="Cod_Programa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Empresa_Faturamento" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Cancelamento" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Caracteristica_Contrato" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Contato" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Historico" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Nucleo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Reserva" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Indica_Midia_Especificada" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Cod_Tipo_Midia">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Usuario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Data_Cadastramento" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Data_Cancelamento" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Data_Recepcao_Reserva" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Numero_PI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Motivo_Cancelamento" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Obs_Roteiro" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Periodo_Campanha_Inicio" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Periodo_Campanha_Termino" msdata:DateTimeMode="Unspecified" type="xs:dateTime" />
+              <xs:element name="Valor" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Vlr_Exibido" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Indica_Grade" type="xs:unsignedByte" />
+              <xs:element name="Vlr_Faturado" type="xs:decimal" />
+              <xs:element name="Indica_Realizado" type="xs:unsignedByte" />
+              <xs:element name="Vlr_Ded_Emitido" type="xs:decimal" />
+              <xs:element name="Vlr_Comp_Emitido" type="xs:decimal" />
+              <xs:element name="Vlr_Autorizado" type="xs:decimal" />
+              <xs:element name="Vlr_Deducao" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Vlr_Compensacao" type="xs:decimal" />
+              <xs:element name="Vlr_Diferenca" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Cod_Cliente">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Agencia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Indica_Tipo_Evento" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Indica_Por_Credito" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Vlr_Informado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Data_Info_Vlr" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Cod_Usuario_Vlr" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vlr_Ded_Diferenca" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Vlr_Cred_Diferenca" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Vlr_Tabela" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Indica_Apoio" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="indica_autorizacao" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Vlr_Negociado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Indica_Bloqueio" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="vlr_Gerencial_bav" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Vlr_Correcao" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Indica_Valor_NET" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Vlr_Repasse" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Desconsidera_Patrocinio_Evento" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Vlr_Abatimento_Varejo" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Cod_Mercado" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_Contrato" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="Data_Ajuste_BAV" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Cod_Usuario_Ajuste_BAV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Evento" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vlr_Tabela_Exibido_Contrato" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OBS_Contrato" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Data_Inclusao" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Comercial">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cod_Comercial">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Material" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Numero_Mr" type="xs:int" />
+              <xs:element name="Cod_Red_Produto" type="xs:int" minOccurs="0" />
+              <xs:element name="Cod_Empresa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sequencia_Mr" type="xs:short" />
+              <xs:element name="Cod_Tipo_Comercial" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Duracao" type="xs:short" minOccurs="0" />
+              <xs:element name="Indica_Titulo_Determinar" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Nome_Produto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Numero_Fita" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Titulo_Comercial" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Matriz" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Posicao" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Data_Desativacao" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="data_gravacao" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="complemento" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Inicio_Programacao" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Fim_Programacao" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Indica_Merchandising" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Determinar" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Descricao_Tipo_Comercial" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Veiculacao_Digitacao">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cod_Empresa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Numero_Mr" type="xs:int" minOccurs="0" />
+              <xs:element name="Sequencia_Mr" type="xs:short" minOccurs="0" />
+              <xs:element name="Cod_Veiculo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Programa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Caracteristica" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Comercial" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dia_01" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_02" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_03" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_04" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_05" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_06" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_07" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_08" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_09" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_10" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_11" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_12" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_13" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_14" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_15" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_16" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_17" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_18" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_19" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_20" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_21" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_22" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_23" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_24" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_25" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_26" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_27" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_28" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_29" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_30" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="dia_31" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Total" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Contrato" />
+      <xs:field xpath="mstns:Cod_Empresa" />
+      <xs:field xpath="mstns:Numero_Mr" />
+      <xs:field xpath="mstns:Sequencia_Mr" />
+    </xs:unique>
+    <xs:unique name="Comercial_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Comercial" />
+      <xs:field xpath="mstns:Cod_Comercial" />
+      <xs:field xpath="mstns:Numero_Mr" />
+      <xs:field xpath="mstns:Cod_Empresa" />
+      <xs:field xpath="mstns:Sequencia_Mr" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

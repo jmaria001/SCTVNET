@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsComplemento" targetNamespace="http://tempuri.org/dtsComplemento.xsd" xmlns:mstns="http://tempuri.org/dtsComplemento.xsd" xmlns="http://tempuri.org/dtsComplemento.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="ExcludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="sctvConnectionString" IsAppSettingsProperty="True" Modifier="Assembly" Name="sctvConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.sctvConnectionString.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsComplemento" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtbComplemento">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Numero_Complemento" msdata:AutoIncrement="true" msdata:AutoIncrementStep="-1" type="xs:int" />
+              <xs:element name="Cod_Empresa_Faturamento" type="xs:string" default="" />
+              <xs:element name="Cod_Empresa" type="xs:string" default="" />
+              <xs:element name="Numero_Mr" type="xs:int" default="0" />
+              <xs:element name="Sequencia_Mr" type="xs:short" default="0" />
+              <xs:element name="Numero_Negociacao" type="xs:decimal" default="0" />
+              <xs:element name="Numero_Parcela" type="xs:int" default="0" />
+              <xs:element name="Cod_Historico" type="xs:string" default="" />
+              <xs:element name="Cod_Natureza" type="xs:string" default="" />
+              <xs:element name="Cod_Contato" type="xs:string" default="" />
+              <xs:element name="Cod_Nucleo" type="xs:string" default="" />
+              <xs:element name="Descricao" type="xs:string" default="" />
+              <xs:element name="Valor" type="xs:decimal" default="0" />
+              <xs:element name="Qtde_Rateio" type="xs:short" default="0" />
+              <xs:element name="Periodo_Inicial" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Periodo_Final" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Origem" type="xs:unsignedByte" />
+              <xs:element name="Data_Cadastramento" msdata:DateTimeMode="Unspecified" type="xs:dateTime" />
+              <xs:element name="Data_Cancelamento" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Cod_Usuario" type="xs:string" default="" />
+              <xs:element name="Comissao_Agencia" type="xs:decimal" default="0" />
+              <xs:element name="Comissao_Intermediario" type="xs:decimal" default="0" />
+              <xs:element name="Intermediario" type="xs:string" default="" />
+              <xs:element name="Forma_Pgto" type="xs:unsignedByte" default="0" />
+              <xs:element name="Indica_Cheque" type="xs:unsignedByte" default="0" />
+              <xs:element name="Indica_Faturamento_Liquido" type="xs:unsignedByte" default="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbRateio">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Numero_Complemento" type="xs:int" />
+              <xs:element name="Numero_Rateio" type="xs:short" />
+              <xs:element name="Cod_Empresa" type="xs:string" default="" />
+              <xs:element name="Numero_Negociacao" type="xs:decimal" default="0" />
+              <xs:element name="Data_Emissao" msdata:DateTimeMode="Unspecified" type="xs:dateTime" />
+              <xs:element name="Condicao_Nf" type="xs:short" default="0" />
+              <xs:element name="Nf_Complementar" type="xs:int" default="0" />
+              <xs:element name="Numero_Fatura" type="xs:int" default="0" />
+              <xs:element name="Qtde_Parcela" type="xs:unsignedByte" default="0" />
+              <xs:element name="Referencia" type="xs:string" default="" />
+              <xs:element name="Tipo_Vencimento" type="xs:string" default="DFM" />
+              <xs:element name="Vencimento_Nf" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Vlr_Nf" type="xs:decimal" default="0" />
+              <xs:element name="Origem" type="xs:unsignedByte" default="0" />
+              <xs:element name="Cod_Cliente" type="xs:string" default="" />
+              <xs:element name="Indica_Log_Cliente" type="xs:unsignedByte" default="0" />
+              <xs:element name="Cod_Agencia" type="xs:string" default="" />
+              <xs:element name="Indica_Log_Agencia" type="xs:unsignedByte" default="0" />
+              <xs:element name="Cod_Veiculo" type="xs:string" default="" />
+              <xs:element name="Percentual_Rateio" type="xs:decimal" default="0" />
+              <xs:element name="Data_Cadastramento" msdata:DateTimeMode="Unspecified" type="xs:dateTime" />
+              <xs:element name="Cod_Cobranca" type="xs:string" default="" />
+              <xs:element name="Cod_Endereco_Cobranca" type="xs:unsignedByte" default="0" />
+              <xs:element name="Id_Portador" type="xs:int" default="0" />
+              <xs:element name="Cod_Usuario" type="xs:string" default="" />
+              <xs:element name="Emissao_NF" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Cancelamento_NF" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbRateioAuxiliar">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Numero_Complemento" type="xs:int" />
+              <xs:element name="Numero_Rateio" type="xs:short" />
+              <xs:element name="Numero_Duplicata" type="xs:short" />
+              <xs:element name="Data_Vencimento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Valor" type="xs:decimal" default="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbComposicaoComplemento">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Numero_Complemento" type="xs:int" />
+              <xs:element name="Cod_Empresa" type="xs:string" default="" />
+              <xs:element name="Numero_Mr" type="xs:int" />
+              <xs:element name="Sequencia_Mr" type="xs:short" />
+              <xs:element name="Data_Cadastramento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Data_Cancelamento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Indica_Mestre_Grupo" type="xs:boolean" default="false" />
+              <xs:element name="Vlr_Considerado_Contrato" type="xs:decimal" default="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtbComplemento" />
+      <xs:field xpath="mstns:Numero_Complemento" />
+    </xs:unique>
+    <xs:unique name="dtbRateio_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtbRateio" />
+      <xs:field xpath="mstns:Numero_Complemento" />
+      <xs:field xpath="mstns:Numero_Rateio" />
+    </xs:unique>
+    <xs:unique name="dtbRateioAuxiliar_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtbRateioAuxiliar" />
+      <xs:field xpath="mstns:Numero_Complemento" />
+      <xs:field xpath="mstns:Numero_Duplicata" />
+      <xs:field xpath="mstns:Numero_Rateio" />
+    </xs:unique>
+    <xs:unique name="dtbComposicaoComplemento_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtbComposicaoComplemento" />
+      <xs:field xpath="mstns:Numero_Mr" />
+      <xs:field xpath="mstns:Cod_Empresa" />
+      <xs:field xpath="mstns:Sequencia_Mr" />
+      <xs:field xpath="mstns:Numero_Complemento" />
+    </xs:unique>
+    <xs:keyref name="FK_dtbComplemento_dtbComposicaoComplemento" refer="Constraint1" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:dtbComposicaoComplemento" />
+      <xs:field xpath="mstns:Numero_Complemento" />
+    </xs:keyref>
+    <xs:keyref name="FK_dtbRateio_dtbRateioAuxiliar" refer="dtbRateio_Constraint1" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:dtbRateioAuxiliar" />
+      <xs:field xpath="mstns:Numero_Complemento" />
+      <xs:field xpath="mstns:Numero_Rateio" />
+    </xs:keyref>
+    <xs:keyref name="FK_dtbComplemento_dtbRateio" refer="Constraint1" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:dtbRateio" />
+      <xs:field xpath="mstns:Numero_Complemento" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

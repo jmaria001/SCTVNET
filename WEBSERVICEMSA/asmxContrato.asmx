@@ -1,0 +1,1 @@
+<%@ WebService Language="C#" CodeBehind="~/App_Code/asmxContrato.cs" Class="WebServiceMSA.asmxContrato" %>

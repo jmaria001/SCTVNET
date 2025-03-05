@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsTerceiro" targetNamespace="http://tempuri.org/dtsTerceiro.xsd" xmlns:mstns="http://tempuri.org/dtsTerceiro.xsd" xmlns="http://tempuri.org/dtsTerceiro.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsTerceiro" msdata:IsDataSet="true" msdata:Locale="en-US">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtbTerceiro">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cod_Terceiro" type="xs:string" />
+              <xs:element name="Razao_Social" type="xs:string" />
+              <xs:element name="Nome_Fantasia" type="xs:string" />
+              <xs:element name="Cod_Funcao" type="xs:int" />
+              <xs:element name="CPF_CNPJ" type="xs:string" minOccurs="0" />
+              <xs:element name="Inscricao_Estadual" type="xs:string" minOccurs="0" />
+              <xs:element name="Inscricao_Municipal" type="xs:string" minOccurs="0" />
+              <xs:element name="Cod_Empresa_Principal" type="xs:string" />
+              <xs:element name="Cod_Categoria" type="xs:int" minOccurs="0" />
+              <xs:element name="Indica_CPF" type="xs:boolean" />
+              <xs:element name="Indica_TV" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Indica_Afiliada" type="xs:boolean" minOccurs="0" />
+              <xs:element name="indica_regional" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Indica_Estrangeiro" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Indica_IntegracaoIq" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Indica_Porte" type="xs:int" minOccurs="0" />
+              <xs:element name="Indica_Direto" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Indica_Desativado" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Data_Cadastramento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Data_Alteracao" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Data_Desativacao" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbTerceiro_Endereco">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cod_Terceiro" type="xs:string" />
+              <xs:element name="Cod_Empresa" type="xs:string" />
+              <xs:element name="Endereco1" type="xs:string" minOccurs="0" />
+              <xs:element name="Bairro1" type="xs:string" minOccurs="0" />
+              <xs:element name="Municipio1" type="xs:string" minOccurs="0" />
+              <xs:element name="Uf1" type="xs:string" minOccurs="0" />
+              <xs:element name="Cep1" type="xs:string" minOccurs="0" />
+              <xs:element name="Endereco2" type="xs:string" minOccurs="0" />
+              <xs:element name="Bairro2" type="xs:string" minOccurs="0" />
+              <xs:element name="Municipio2" type="xs:string" minOccurs="0" />
+              <xs:element name="Uf2" type="xs:string" minOccurs="0" />
+              <xs:element name="Cep2" type="xs:string" minOccurs="0" />
+              <xs:element name="Telefone" type="xs:string" minOccurs="0" />
+              <xs:element name="Fax" type="xs:string" minOccurs="0" />
+              <xs:element name="Email" type="xs:string" minOccurs="0" />
+              <xs:element name="Praca_Pgto" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbTerceiro_Complementar">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cod_Terceiro" type="xs:string" />
+              <xs:element name="Cod_Empresa" type="xs:string" />
+              <xs:element name="Nome_Empresa" type="xs:string" />
+              <xs:element name="Contato1_Nome" type="xs:string" minOccurs="0" />
+              <xs:element name="Contato1_Email" type="xs:string" minOccurs="0" />
+              <xs:element name="Contato1_Fone1" type="xs:string" minOccurs="0" />
+              <xs:element name="Contato1_Fone2" type="xs:string" minOccurs="0" />
+              <xs:element name="Contato2_Nome" type="xs:string" minOccurs="0" />
+              <xs:element name="Contato2_Email" type="xs:string" minOccurs="0" />
+              <xs:element name="Contato2_Fone1" type="xs:string" minOccurs="0" />
+              <xs:element name="Contato2_Fone2" type="xs:string" minOccurs="0" />
+              <xs:element name="Conta_Contabil" type="xs:int" minOccurs="0" />
+              <xs:element name="Sub_Conta" type="xs:int" minOccurs="0" />
+              <xs:element name="Grupo_Cliente" type="xs:short" minOccurs="0" />
+              <xs:element name="Cod_Representante" type="xs:int" minOccurs="0" />
+              <xs:element name="Cod_Banco" type="xs:string" minOccurs="0" />
+              <xs:element name="Cod_Grupo_Cliente" type="xs:short" minOccurs="0" />
+              <xs:element name="Data_Inclusao" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Data_Alteracao" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Data_Desativacao" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Motivo_Desativacao" type="xs:string" minOccurs="0" />
+              <xs:element name="Indica_Desativado" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Indica_Integracao" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Indica_IntegracaoIq" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Indica_Merchandising" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Indica_Integracao_Executada" type="xs:boolean" />
+              <xs:element name="Indica_Integracao_Executada_Contato" type="xs:boolean" />
+              <xs:element name="Indica_IN480" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbTerceiro_Pesquisa">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cod_Terceiro" type="xs:string" />
+              <xs:element name="Razao_Social" type="xs:string" minOccurs="0" />
+              <xs:element name="Nome_Fantasia" type="xs:string" minOccurs="0" />
+              <xs:element name="CPF_CNPJ" type="xs:string" minOccurs="0" />
+              <xs:element name="Cod_Funcao" type="xs:short" minOccurs="0" />
+              <xs:element name="Indica_CPF" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Cod_Empresa_Principal" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="dtsTerceiroKey5" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtbTerceiro" />
+      <xs:field xpath="mstns:Cod_Terceiro" />
+    </xs:unique>
+    <xs:unique name="dtsTerceiroKey2" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtbTerceiro_Endereco" />
+      <xs:field xpath="mstns:Cod_Terceiro" />
+      <xs:field xpath="mstns:Cod_Empresa" />
+    </xs:unique>
+    <xs:unique name="dtsTerceiroKey6" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtbTerceiro_Complementar" />
+      <xs:field xpath="mstns:Cod_Terceiro" />
+      <xs:field xpath="mstns:Cod_Empresa" />
+    </xs:unique>
+    <xs:keyref name="TerceiroTerceiro_Complementar" refer="dtsTerceiroKey5">
+      <xs:selector xpath=".//mstns:dtbTerceiro_Complementar" />
+      <xs:field xpath="mstns:Cod_Terceiro" />
+    </xs:keyref>
+    <xs:keyref name="TerceiroTerceiro_Endereco" refer="dtsTerceiroKey5">
+      <xs:selector xpath=".//mstns:dtbTerceiro_Endereco" />
+      <xs:field xpath="mstns:Cod_Terceiro" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

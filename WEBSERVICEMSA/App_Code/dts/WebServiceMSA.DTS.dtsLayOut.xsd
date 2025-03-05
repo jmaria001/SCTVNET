@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsLayOut" targetNamespace="http://tempuri.org/dtsLayOut.xsd" xmlns:mstns="http://tempuri.org/dtsLayOut.xsd" xmlns="http://tempuri.org/dtsLayOut.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="sctvConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="sctvConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.sctvConnectionString.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsLayOut" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtbLayOut_Tipo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cod_Relatorio" type="xs:int" />
+              <xs:element name="Descricao_Relatorio" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbLayOut">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Linhas_Detalhe" type="xs:int" />
+              <xs:element name="Colunas" type="xs:int" />
+              <xs:element name="Cod_Empresa" type="xs:string" />
+              <xs:element name="Cod_Relatorio" type="xs:int" />
+              <xs:element name="Nome_Campo" type="xs:string" />
+              <xs:element name="Tipo_Campo" type="xs:string" />
+              <xs:element name="Linha" type="xs:int" />
+              <xs:element name="Coluna" type="xs:int" />
+              <xs:element name="Tamanho" type="xs:int" />
+              <xs:element name="Comprimento" type="xs:int" />
+              <xs:element name="Alinhamento" type="xs:string" />
+              <xs:element name="Reduzido" type="xs:boolean" />
+              <xs:element name="Formato" type="xs:string" minOccurs="0" />
+              <xs:element name="Completar" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor" type="xs:string" minOccurs="0" />
+              <xs:element name="Testa_Campo" type="xs:string" minOccurs="0" />
+              <xs:element name="Testa_Valor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbLayOut_Duplicata">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cod_Empresa_Faturamento" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Numero_Fatura" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="Numero_Ordem" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Emissao" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Emissao_Extenso" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Vencimento" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Cod_Fiscal" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Natureza_Operacao" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor_Liquido" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Cod_Empresa" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Numero_Mr" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="Sequencia_Mr" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="Forma_Pgto" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="Praca_Pgto" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Origem" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="CGC_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Indica_CIC" msdata:ReadOnly="true" type="xs:byte" default="0" minOccurs="0" />
+              <xs:element name="Inscricao_Estadual_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Inscricao_Municipal_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Cod_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Nome_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Endereco_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Endereco1_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Endereco2_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Cep_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Cep1_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Cep2_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Municipio_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Municipio1_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Municipio2_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Bairro_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Bairro1_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Bairro2_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="UF_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="UF1_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="UF2_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Cod_Agencia" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Nome_Agencia" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Endereco_Agencia" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Cep_Agencia" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Municipio_Agencia" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Bairro_Agencia" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="UF_Agencia" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Descricao_Linha1" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor_Extenso1" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor_Extenso2" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor_Extenso3" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Selo_Fiscal" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="Numero_Negociacao" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbLayOut_Fatura">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cod_Empresa_Faturamento" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Numero_Fatura" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="Numero_Ordem" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Emissao" msdata:ReadOnly="true" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="Data_Emissao_Extenso" msdata:ReadOnly="true" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="Data_Vencimento" msdata:ReadOnly="true" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="Cod_Fiscal" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Natureza_Operacao" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor_Fatura" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Valor_Comissao" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Valor_Liquido" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Valor_Iss" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Percentual_Iss" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Vlr_COFINS" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Vlr_CS" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Vlr_IR" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Vlr_PIS" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Indica_IN480" msdata:ReadOnly="true" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="Cod_Empresa" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Numero_Mr" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="Sequencia_Mr" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="Forma_Pgto" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="Indica_Cheque" msdata:ReadOnly="true" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="Condicao_Nf" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="Cod_Veiculo" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Nome_Veiculo" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Origem" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="Qtde_Parcela" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="Data_Inicio" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Termino" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Praca_Pgto" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="CGC_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Indica_CIC" msdata:ReadOnly="true" type="xs:byte" default="0" minOccurs="0" />
+              <xs:element name="Inscricao_Estadual_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Inscricao_Municipal_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Cod_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Nome_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Endereco_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Endereco1_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Endereco2_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Cep_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Cep1_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Cep2_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Municipio_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Municipio1_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Municipio2_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Bairro_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Bairro1_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Bairro2_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="UF_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="UF1_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="UF2_Cliente" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Cod_Agencia" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Nome_Agencia" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Endereco_Agencia" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Cep_Agencia" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Municipio_Agencia" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Bairro_Agencia" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="UF_Agencia" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor_Extenso1" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor_Extenso2" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor_Extenso3" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Descricao_Linha1" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Descricao_Linha2" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Descricao_Linha3" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Descricao_Linha4" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Descricao_Linha5" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Duplicata_A" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Duplicata_B" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Duplicata_C" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Duplicata_D" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Duplicata_E" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Duplicata_F" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Duplicata_G" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Duplicata_H" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Duplicata_I" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Duplicata_J" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Duplicata_K" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Duplicata_L" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Venc_Duplicata_A" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Venc_Duplicata_B" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Venc_Duplicata_C" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Venc_Duplicata_D" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Venc_Duplicata_E" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Venc_Duplicata_F" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Venc_Duplicata_G" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Venc_Duplicata_H" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Venc_Duplicata_I" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Venc_Duplicata_J" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Venc_Duplicata_K" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Venc_Duplicata_L" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor_Duplicata_A" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Valor_Duplicata_B" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Valor_Duplicata_C" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Valor_Duplicata_D" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Valor_Duplicata_E" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Valor_Duplicata_F" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Valor_Duplicata_G" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Valor_Duplicata_H" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Valor_Duplicata_I" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Valor_Duplicata_J" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Valor_Duplicata_K" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Valor_Duplicata_L" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Conta_Contabil" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="Sub_Conta" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="IRRF" msdata:ReadOnly="true" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Selo_Fiscal" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="Numero_Negociacao" msdata:ReadOnly="true" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="PK_LayOut_Tipo" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtbLayOut_Tipo" />
+      <xs:field xpath="mstns:Cod_Relatorio" />
+    </xs:unique>
+    <xs:keyref name="FK_dtbLayOut_Tipo_dtbLayOut" refer="PK_LayOut_Tipo" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:dtbLayOut" />
+      <xs:field xpath="mstns:Cod_Relatorio" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

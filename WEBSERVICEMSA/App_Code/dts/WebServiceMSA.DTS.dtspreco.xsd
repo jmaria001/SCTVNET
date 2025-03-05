@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsPreco" targetNamespace="http://tempuri.org/dtsPreco.xsd" xmlns:mstns="http://tempuri.org/dtsPreco.xsd" xmlns="http://tempuri.org/dtsPreco.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="sctvConnectionString" IsAppSettingsProperty="True" Modifier="Assembly" Name="sctvConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.sctvConnectionString.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsPreco" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtbPreco">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Competencia" type="xs:int" />
+              <xs:element name="Sequencia" type="xs:int" />
+              <xs:element name="Tipo_Preco" type="xs:string" />
+              <xs:element name="Cod_Programa" type="xs:string" />
+              <xs:element name="Cod_Veiculo_Mercado" type="xs:string" />
+              <xs:element name="Valor" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Cod_Usuario" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Cadastramento" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Horario_Exibicao" type="xs:string" default="" />
+              <xs:element name="Indica_Imprimir_Traco" type="xs:boolean" default="false" />
+              <xs:element name="Indica_Impressao" type="xs:boolean" default="false" />
+              <xs:element name="Dia_Semana_Indicadores" type="xs:string" default="" />
+              <xs:element name="Valor_Anterior" type="xs:decimal" default="0" />
+              <xs:element name="Nome_Programa" type="xs:string" default="" />
+              <xs:element name="Nome_Veiculo" type="xs:string" default="" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbRateio_Net">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Competencia" type="xs:int" />
+              <xs:element name="Cod_Veiculo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Percentual_Rateio" type="xs:decimal" default="0" />
+              <xs:element name="Data_Cadastramento" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Cod_Usuario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtbPreco" />
+      <xs:field xpath="mstns:Competencia" />
+      <xs:field xpath="mstns:Cod_Veiculo_Mercado" />
+      <xs:field xpath="mstns:Cod_Programa" />
+      <xs:field xpath="mstns:Tipo_Preco" />
+      <xs:field xpath="mstns:Sequencia" />
+    </xs:unique>
+    <xs:unique name="dtbRateio_Net_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtbRateio_Net" />
+      <xs:field xpath="mstns:Competencia" />
+      <xs:field xpath="mstns:Cod_Veiculo" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

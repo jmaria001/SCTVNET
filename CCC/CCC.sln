@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Modulo Roteiro", "..\Solucao Roteiro\Modulo Roteiro.vbproj", "{7B677FF6-F85B-4CB2-8FA9-9769951E4BD2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{33D06E3A-967A-42F0-885C-5AA7CC90391A} = {33D06E3A-967A-42F0-885C-5AA7CC90391A}
+		{B0FC5AB3-03CB-4423-AF8B-9A872AA2CE78} = {B0FC5AB3-03CB-4423-AF8B-9A872AA2CE78}
+		{C7F9DEF3-63BE-4A9B-9A48-48F1CFD5B605} = {C7F9DEF3-63BE-4A9B-9A48-48F1CFD5B605}
+		{A5E88986-9EAB-4A0F-97FA-C246E9700178} = {A5E88986-9EAB-4A0F-97FA-C246E9700178}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCL_SCTV", "..\WCL_SCTV\WCL_SCTV.csproj", "{C7F9DEF3-63BE-4A9B-9A48-48F1CFD5B605}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A5E88986-9EAB-4A0F-97FA-C246E9700178} = {A5E88986-9EAB-4A0F-97FA-C246E9700178}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSAClass", "..\msaclass\MSAClass.csproj", "{A5E88986-9EAB-4A0F-97FA-C246E9700178}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WUC", "..\wuc\WUC\WUC.vbproj", "{33D06E3A-967A-42F0-885C-5AA7CC90391A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A5E88986-9EAB-4A0F-97FA-C246E9700178} = {A5E88986-9EAB-4A0F-97FA-C246E9700178}
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installer", "..\Installer\Installer.vdproj", "{01AC755E-5E5C-41B9-85C6-AEE5EB716D47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Criptografia", "..\Criptografia\Criptografia.csproj", "{B0FC5AB3-03CB-4423-AF8B-9A872AA2CE78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B677FF6-F85B-4CB2-8FA9-9769951E4BD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B677FF6-F85B-4CB2-8FA9-9769951E4BD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B677FF6-F85B-4CB2-8FA9-9769951E4BD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B677FF6-F85B-4CB2-8FA9-9769951E4BD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7F9DEF3-63BE-4A9B-9A48-48F1CFD5B605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7F9DEF3-63BE-4A9B-9A48-48F1CFD5B605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7F9DEF3-63BE-4A9B-9A48-48F1CFD5B605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7F9DEF3-63BE-4A9B-9A48-48F1CFD5B605}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5E88986-9EAB-4A0F-97FA-C246E9700178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5E88986-9EAB-4A0F-97FA-C246E9700178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5E88986-9EAB-4A0F-97FA-C246E9700178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5E88986-9EAB-4A0F-97FA-C246E9700178}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33D06E3A-967A-42F0-885C-5AA7CC90391A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33D06E3A-967A-42F0-885C-5AA7CC90391A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33D06E3A-967A-42F0-885C-5AA7CC90391A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33D06E3A-967A-42F0-885C-5AA7CC90391A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01AC755E-5E5C-41B9-85C6-AEE5EB716D47}.Debug|Any CPU.ActiveCfg = Debug
+		{01AC755E-5E5C-41B9-85C6-AEE5EB716D47}.Release|Any CPU.ActiveCfg = Release
+		{B0FC5AB3-03CB-4423-AF8B-9A872AA2CE78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0FC5AB3-03CB-4423-AF8B-9A872AA2CE78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0FC5AB3-03CB-4423-AF8B-9A872AA2CE78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0FC5AB3-03CB-4423-AF8B-9A872AA2CE78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

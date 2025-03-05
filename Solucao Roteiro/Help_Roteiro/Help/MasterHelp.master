@@ -1,0 +1,106 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterHelp.master.cs" Inherits="WebMSA.Help.MasterHelp" %>
+<% Response.CacheControl = "no-cache"; %>
+<% Response.AddHeader ("Pragma", "no-cache"); %>
+<% Response.Expires = -1000; %>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Help SCTVI - Roteiro</title>
+    <meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+	<meta HTTP-EQUIV="Expires" CONTENT="-1">
+     <link href="../MSA.css" type="text/css" rel="stylesheet">
+</head>
+<body bottommargin="0" leftmargin="0" topmargin="0" rightmargin="0" scroll="no" onkeydown="keyDown()" onkeypress="keyPress()" onmousedown="mouseDown()">
+    <form id="form1" runat="server">
+    <div>
+   
+    <table cellspacing="0" cellpadding="0" width="100%" background="../Imagens/img_Fita_Cabecalho01.jpg"
+                        border="0">
+                       <tr>
+                 <td width="86" rowspan="2">
+                                <div align="right">
+                                    <img src="../Imagens/img_Logo_Sbt.gif" width="68" height="68"></div>
+                            </td>
+                <td height="79" colspan="3" background="Imagens/img_Fita_Login.jpg">
+                    &nbsp; &nbsp;
+                    <img height="7" src="../Imagens/img_sbt_Cabecalho.gif" width="298" /></td>
+            </tr>
+            <tr>
+                <td height="4" colspan="4" background="Imagens/img_Ponto_Login.gif">
+                    <div align="left">
+                        <img src="Imagens/img_Ponto_Login.gif" width="3" height="4"></div>
+                </td>
+            </tr>
+            <tr>
+    </table>
+        <table>
+            <tr>
+                <td style="width: 100px; height: 100%; border-top-color: gainsboro; border-right-color: gainsboro;" valign="top">
+        <asp:TreeView ID="trwMenu" runat="server" ImageSet="Faq" Height="100%" ShowLines="True">
+            <ParentNodeStyle Font-Bold="False" />
+            <HoverNodeStyle Font-Underline="True" ForeColor="Purple" />
+            <SelectedNodeStyle Font-Underline="True" HorizontalPadding="0px" VerticalPadding="0px" ForeColor="#0000C0" />
+            <Nodes>
+            
+              <asp:TreeNode  Text="Help Roteiro" Value="mnuHelp">
+                                        <asp:TreeNode  Text="Supervis&#227;o" Value="mnuTabelas">
+                                            <asp:TreeNode Text="Log do Roteiro" Value="mnuLogRoteiro" NavigateUrl="~/Help/helpaspxLogRoteiro.aspx"></asp:TreeNode>
+                                            <asp:TreeNode Text="Usu&#225;rios do Roteiro" Value="mnuUsuariosRoteiro" NavigateUrl="~/Help/helpaspxUsuariosRoteiro.aspx">
+                                            </asp:TreeNode>
+                                        </asp:TreeNode>
+                                        <asp:TreeNode  Text="Fitas" Value="mnuprogramacao">
+                                            <asp:TreeNode Text="Controle de Fitas" Value="mnuCaontroleFitas" NavigateUrl="~/Help/helpaspxControleFitas.aspx">
+                                            </asp:TreeNode>
+                                        </asp:TreeNode>
+                                        <asp:TreeNode  Text="Roteiro" Value="mnuComercial">
+                                            <asp:TreeNode Text="Ordena&#231;&#227;o"
+                                                Value="mnuOrdenacao" NavigateUrl="~/Help/helpaspxOrdenacao.aspx"></asp:TreeNode>
+                                            <asp:TreeNode Text="Pr&#233;-Ordena&#231;&#227;o"
+                                                Value="mnuPreOrdenacao" NavigateUrl="~/Help/helpaspxPreOrdenacao.aspx"></asp:TreeNode>
+                                            <asp:TreeNode Text="Composi&#231;&#227;o Break" Value="mnuComposicaoBreak" NavigateUrl="~/Help/helpaspxComposicaoBreak.aspx">
+                                            </asp:TreeNode>
+                                            <asp:TreeNode Text="Encerramento do Roteiro " Value="mnuEncerramentoRoteiro" NavigateUrl="~/Help/helpaspxEncerramentoRoteiro.aspx"></asp:TreeNode>
+                                            <asp:TreeNode Text="Breaks N&#227;o Considerados" Value="mnuBreaksNConsid" NavigateUrl="~/Help/helpaspxBreaksNConsiderados.aspx">
+                                            </asp:TreeNode>
+                                            <asp:TreeNode Text="Consulta de Fitas Ordenadas" Value="mnuConsuFtOrdenadas" NavigateUrl="~/Help/helpaspxConsultaFitasOrdenadas.aspx">
+                                            </asp:TreeNode>
+                                            <asp:TreeNode Text="Consulta do Roteiro Ordenado" Value="mnuConsRotOrdenado" NavigateUrl="~/Help/helpaspxConsultaRoteiroOrdenado.aspx">
+                                            </asp:TreeNode>
+                                            <asp:TreeNode Text="Ajustar Hor&#225;rios da Programa&#231;&#227;o" Value="mnuAjusHrPrograma" NavigateUrl="~/Help/helpAjustarHorarioProgramacao.aspx">
+                                            </asp:TreeNode>
+                                            <asp:TreeNode Text="Hor&#225;rio Real da Programa&#231;&#227;o" Value="mnuHrRealPrograma" NavigateUrl="~/Help/helpaspxHorarioRealProgramacao.aspx">
+                                            </asp:TreeNode>
+                                            <asp:TreeNode Text="Compara&#231;&#227;o do Roteiro" Value="mnuComparaRoteiro" NavigateUrl="~/Help/helpaspxComparacaoRoteiro.aspx">
+                                            </asp:TreeNode>
+                                            <asp:TreeNode Text="Replica&#231;&#227;o do Roteiro" Value="mnuReplRoteiro" NavigateUrl="~/Help/helpaspxReplicacaoRoteiro.aspx">
+                                            </asp:TreeNode>
+                                        </asp:TreeNode>
+                                        <asp:TreeNode  Text="Relat&#243;rios" Value="mnuOpec">
+                                            <asp:TreeNode Text="Roteiro T&#233;cnico" Value="mnuRoteiroTecnico" NavigateUrl="~/Help/helpaspxRoteiroTecnico.aspx"></asp:TreeNode>
+                                            <asp:TreeNode Text="Listagem Di&#225;ria de Checking" Value="mnuListaDiaCheck" NavigateUrl="~/Help/helpaspxListaDiariaChecking.aspx">
+                                            </asp:TreeNode>
+                                        </asp:TreeNode>
+                  <asp:TreeNode Text="Integra&#231;&#245;es" Value="Integra&#231;&#245;es">
+                      <asp:TreeNode Text="Play List" Value="mnuPlayList" NavigateUrl="~/Help/helpaspxPlayList.aspx"></asp:TreeNode>
+                      <asp:TreeNode Text="Retorno da Play List" Value="mnuRetPlayList" NavigateUrl="~/Help/helpaspxRetornoPlayList.aspx"></asp:TreeNode>
+                  </asp:TreeNode>
+                                        </asp:TreeNode>
+            </Nodes>
+            <NodeStyle Font-Names="Tahoma" Font-Size="8pt" ForeColor="DarkBlue" HorizontalPadding="5px"
+                NodeSpacing="0px" VerticalPadding="0px" />
+            <RootNodeStyle Font-Bold="True" Font-Italic="False" Font-Size="X-Small" />
+            
+        </asp:TreeView>
+                </td>
+                <td style="width: 98%; height: 100%; border-left-color: gainsboro; border-top-color: gainsboro; border-left-style: solid;" valign="top">
+                
+                    <asp:ContentPlaceHolder ID="CPH1" runat="server">
+                    </asp:ContentPlaceHolder>
+         
+                </td>
+            </tr>
+        </table>
+        &nbsp;
+    </div>
+    </form>
+</body>
+</html>

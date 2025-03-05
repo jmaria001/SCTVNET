@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsBreak" targetNamespace="http://tempuri.org/dtsBreak.xsd" xmlns:mstns="http://tempuri.org/dtsBreak.xsd" xmlns="http://tempuri.org/dtsBreak.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="sctvConnectionString" IsAppSettingsProperty="True" Modifier="Assembly" Name="sctvConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.sctvConnectionString.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsBreak" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtbMensagem_Exclusao_Roteiro">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_Exclusao_Roteiro" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="Cod_Veiculo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Data_Exibicao" msdata:DateTimeMode="Unspecified" type="xs:dateTime" />
+              <xs:element name="Cod_Programa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Breaks" type="xs:short" />
+              <xs:element name="Sequencia_Faixa" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Tipo_Break" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Usuario_Exclusao" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Data_Exclusao" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Visto_Usuario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Data_Visto" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="indica_desativado" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Descricao" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbBreak_Desconsiderado">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cod_Programa" type="xs:string" minOccurs="0" />
+              <xs:element name="Breaks" type="xs:int" minOccurs="0" />
+              <xs:element name="Sequencia_Break" type="xs:int" minOccurs="0" />
+              <xs:element name="Titulo_Break" type="xs:string" minOccurs="0" />
+              <xs:element name="Indica_Desconsiderado" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Duracao" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbCritica_BreakDesconsiderado">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Indica_Critica" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Cod_Veiculo_x0020_" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Exibicao" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Cod_Programa" type="xs:string" minOccurs="0" />
+              <xs:element name="Breaks" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Critica" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbBreak">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nBreak" type="xs:unsignedByte" />
+              <xs:element name="Sequencia_Break" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Duracao" type="xs:short" />
+              <xs:element name="Hora_Inicio" type="xs:string" minOccurs="0" />
+              <xs:element name="Sequencia_Faixa" type="xs:unsignedByte" />
+              <xs:element name="Observacao" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Titulo_Break" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tipo_Break" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Descricao">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MaiorData" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbCritica_Break">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Indica_Critica" type="xs:string" minOccurs="0" />
+              <xs:element name="Cod_Veiculo" type="xs:string" minOccurs="0" />
+              <xs:element name="Data_Exibicao" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Cod_Programa" type="xs:string" minOccurs="0" />
+              <xs:element name="Critica" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtbTBRSA_BREAK">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_Processo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Veiculo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Data_Exibicao" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Cod_Programa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Dia_Semana" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Breaks" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Sequencia_Faixa" type="xs:short" minOccurs="0" />
+              <xs:element name="Duracao" type="xs:short" minOccurs="0" />
+              <xs:element name="Hora_Inicio" type="xs:string" minOccurs="0" />
+              <xs:element name="Tipo_Break" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Titulo_BreaK" msprop:nullValue="_null" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sequencia_Break" type="xs:int" minOccurs="0" />
+              <xs:element name="Observacao" msprop:nullValue="_null" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sequencia" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Rodape_Inter" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Data_Inicio" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Data_Final" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Grava_Rodape" type="xs:unsignedByte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtbMensagem_Exclusao_Roteiro" />
+      <xs:field xpath="mstns:ID_Exclusao_Roteiro" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
